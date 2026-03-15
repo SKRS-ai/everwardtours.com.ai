@@ -3,96 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVERWARD TOURS | Global Travel Network</title>
+    <title>EVERWARD TOURS | Global Travel & Logistics Excellence</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="airline-prestige-theme">
+<body>
 
-    <header class="main-nav">
-        <div class="nav-container">
-            <div class="brand-left">
+    <div class="utility-bar">
+        <div class="container">
+            <span><i class="fa-solid fa-phone"></i> 24/7 Global Support: 1-800-EVERWARD</span>
+            <div class="utility-links">
+                <a href="#">Support</a>
+                <a href="#">English (US)</a>
+                <a href="#">USD</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo-area">
                 <div class="logo">EVERWARD<span>TOURS</span></div>
-                <span class="tagline">Official Logistics Partner</span>
             </div>
             
-            <nav class="nav-center">
-                <a href="#" class="active">Stays</a>
-                <a href="#">Aviation</a>
-                <a href="#">Fleet</a>
-                <a href="#">Rail</a>
+            <nav class="nav-links">
+                <a href="#" class="active"><i class="fa-solid fa-bed"></i> Stays</a>
+                <a href="#"><i class="fa-solid fa-plane"></i> Flights</a>
+                <a href="#"><i class="fa-solid fa-car"></i> Cars</a>
+                <a href="#"><i class="fa-solid fa-ship"></i> Cruises</a>
+                <a href="#"><i class="fa-solid fa-train"></i> Rail</a>
             </nav>
 
-            <div class="access-right">
-                <button class="btn-secondary" onclick="openAuth('register')">Become a Member</button>
-                <button class="btn-primary" onclick="openAuth('login')">Sign In</button>
+            <div class="auth-buttons">
+                <button class="btn-text" onclick="toggleAuth('register')">Register</button>
+                <button class="btn-primary" onclick="toggleAuth('login')">Sign In</button>
             </div>
         </div>
     </header>
 
-    <section class="hero-terminal">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="trust-badge"><i class="fa-solid fa-shield-check"></i> Verified Global Reservation Network</div>
-            <h1>The World, Synchronized.</h1>
-            <p>Book integrated travel blueprints with the world's most reliable transport database.</p>
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Find your next blueprint.</h1>
+            <p>Search low-price deals on hotels, flights, and professional fleet logistics.</p>
+        </div>
 
-            <div class="search-command">
-                <div class="search-type-selector">
-                    <button class="type-tab active">All-In-One Trip</button>
-                    <button class="type-tab">Flights Only</button>
-                    <button class="type-tab">Stays Only</button>
-                    <button class="type-tab">Fleet/Car</button>
-                </div>
-
-                <form class="search-form-grid">
-                    <div class="search-field">
-                        <label>Departure Point</label>
-                        <div class="input-with-icon">
-                            <i class="fa-solid fa-location-arrow"></i>
-                            <input type="text" placeholder="Origin City">
-                        </div>
-                    </div>
-                    <div class="search-field border-left">
-                        <label>Arrival Sector</label>
-                        <div class="input-with-icon">
-                            <i class="fa-solid fa-map-pin"></i>
-                            <input type="text" placeholder="Destination">
-                        </div>
-                    </div>
-                    <div class="search-field border-left">
-                        <label>Travel Dates</label>
-                        <div class="input-with-icon">
-                            <i class="fa-solid fa-calendar-range"></i>
-                            <input type="text" placeholder="Add Dates">
-                        </div>
-                    </div>
-                    <button type="submit" class="btn-execute-search">
-                        FIND BEST RATES
-                    </button>
-                </form>
+        <div class="search-container">
+            <div class="search-tabs">
+                <button class="tab-btn active">Hotels + Transport</button>
+                <button class="tab-btn">Flights</button>
+                <button class="tab-btn">Car Rentals</button>
             </div>
             
-            <div class="price-notice">
-                <i class="fa-solid fa-chart-line"></i> Real-time price optimization active for <strong>Philadelphia, PA</strong>
+            <form class="search-form">
+                <div class="field-group">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="input-stack">
+                        <label>Where are you going?</label>
+                        <input type="text" placeholder="Enter destination">
+                    </div>
+                </div>
+                <div class="field-group border-left">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div class="input-stack">
+                        <label>Check-in — Check-out</label>
+                        <input type="text" placeholder="Add dates">
+                    </div>
+                </div>
+                <div class="field-group border-left">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="input-stack">
+                        <label>Travelers</label>
+                        <input type="text" placeholder="2 adults · 0 children">
+                    </div>
+                </div>
+                <button type="submit" class="search-submit">Search</button>
+            </form>
+            <div class="search-options">
+                <label class="checkbox-container">
+                    <input type="checkbox"> I'm traveling for work
+                    <span class="checkmark"></span>
+                </label>
             </div>
         </div>
     </section>
 
-    <section class="top-destinations">
-        <div class="container">
-            <h2 class="section-title">Global Blueprints</h2>
-            <div class="dest-grid">
-                <div class="dest-card">
-                    <div class="img-wrap" style="background-image: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=600');"></div>
-                    <div class="dest-info">
-                        <h3>Sedona // Casa Arizona</h3>
-                        <p>Integrated Flight + Fleet + Stay</p>
-                        <span class="price">From $1,200</span>
-                    </div>
-                </div>
-                </div>
+    <section class="promo-section container">
+        <div class="promo-card gold-gradient">
+            <div class="promo-info">
+                <h3>Everward Membership</h3>
+                <p>Save 15% or more on stays worldwide with your Global Citizen ID.</p>
+                <button class="btn-dark">Sign in & Save</button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=400" alt="Luxury House">
+        </div>
+    </section>
+
+    <section class="destinations container">
+        <div class="section-header">
+            <h2>Trending Destinations</h2>
+            <p>Most popular blueprints for 2026</p>
+        </div>
+        <div class="dest-grid">
+            <div class="city-card">
+                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=400" alt="Tokyo">
+                <h4>Tokyo, Japan</h4>
+            </div>
+            <div class="city-card">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=400" alt="Paris">
+                <h4>Paris, France</h4>
+            </div>
+            <div class="city-card">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=400" alt="Dubai">
+                <h4>Dubai, UAE</h4>
+            </div>
+            <div class="city-card">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=400" alt="Arizona">
+                <h4>Sedona, USA</h4>
+            </div>
         </div>
     </section>
 

@@ -3,98 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVERWARD TOURS | Global Logistics Command</title>
+    <title>EVERWARD TOURS | Global Travel Network</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="command-theme">
+<body class="airline-prestige-theme">
 
-    <header class="header-main">
-        <div class="header-container">
-            <div class="brand-unit">
-                <div class="unbroken-compass"></div>
+    <header class="main-nav">
+        <div class="nav-container">
+            <div class="brand-left">
                 <div class="logo">EVERWARD<span>TOURS</span></div>
+                <span class="tagline">Official Logistics Partner</span>
             </div>
-
-            <nav class="logistics-nav">
-                <a href="#stays"><i class="fa-solid fa-bed"></i> STAYS</a>
-                <a href="#aviation"><i class="fa-solid fa-plane"></i> AVIATION</a>
-                <a href="#fleet"><i class="fa-solid fa-car"></i> FLEET</a>
-                <a href="#rail"><i class="fa-solid fa-train"></i> RAIL</a>
+            
+            <nav class="nav-center">
+                <a href="#" class="active">Stays</a>
+                <a href="#">Aviation</a>
+                <a href="#">Fleet</a>
+                <a href="#">Rail</a>
             </nav>
 
-            <div class="access-unit">
-                <button class="btn-minimal" onclick="openAuth('register')">Register</button>
-                <button class="btn-gold" onclick="openAuth('login')">Sign In</button>
+            <div class="access-right">
+                <button class="btn-secondary" onclick="openAuth('register')">Become a Member</button>
+                <button class="btn-primary" onclick="openAuth('login')">Sign In</button>
             </div>
         </div>
     </header>
 
-    <section class="hero-command">
-        <div class="hero-bg-overlay"></div>
+    <section class="hero-terminal">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="intel-tag">GLOBAL CITIZEN JOE LLC // SECTOR LOGISTICS 001</div>
-            <h1>GUIDING THE WAY.</h1>
-            <p>Direct access to the global travel network. Secure reservations. Negotiated elite rates.</p>
+            <div class="trust-badge"><i class="fa-solid fa-shield-check"></i> Verified Global Reservation Network</div>
+            <h1>The World, Synchronized.</h1>
+            <p>Book integrated travel blueprints with the world's most reliable transport database.</p>
 
-            <div class="unified-engine">
-                <div class="engine-header">
-                    <span><i class="fa-solid fa-network-wired"></i> Unified Database Connection: <strong>ACTIVE</strong></span>
-                    <span class="price-guarantee">Lowest Rates Guaranteed</span>
+            <div class="search-command">
+                <div class="search-type-selector">
+                    <button class="type-tab active">All-In-One Trip</button>
+                    <button class="type-tab">Flights Only</button>
+                    <button class="type-tab">Stays Only</button>
+                    <button class="type-tab">Fleet/Car</button>
                 </div>
-                
-                <form class="search-grid">
-                    <div class="input-block">
-                        <label>Origin</label>
-                        <input type="text" placeholder="Current Location">
+
+                <form class="search-form-grid">
+                    <div class="search-field">
+                        <label>Departure Point</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <input type="text" placeholder="Origin City">
+                        </div>
                     </div>
-                    <div class="input-block b-left">
-                        <label>Target Destination</label>
-                        <input type="text" placeholder="Where to next, Citizen?">
+                    <div class="search-field border-left">
+                        <label>Arrival Sector</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-map-pin"></i>
+                            <input type="text" placeholder="Destination">
+                        </div>
                     </div>
-                    <div class="input-block b-left">
-                        <label>Timeline</label>
-                        <input type="text" placeholder="Select Dates">
+                    <div class="search-field border-left">
+                        <label>Travel Dates</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-calendar-range"></i>
+                            <input type="text" placeholder="Add Dates">
+                        </div>
                     </div>
-                    <button type="submit" class="btn-execute">
-                        EXECUTE SEARCH <i class="fa-solid fa-arrow-right-long"></i>
+                    <button type="submit" class="btn-execute-search">
+                        FIND BEST RATES
                     </button>
                 </form>
-
-                <div class="engine-footer">
-                    <span><i class="fa-solid fa-bolt"></i> Real-time sync with Everward.app Logistics</span>
-                </div>
+            </div>
+            
+            <div class="price-notice">
+                <i class="fa-solid fa-chart-line"></i> Real-time price optimization active for <strong>Philadelphia, PA</strong>
             </div>
         </div>
     </section>
 
-    <section class="recon-grid">
+    <section class="top-destinations">
         <div class="container">
-            <div class="grid-header">
-                <h2>Strategic Blueprints</h2>
-                <p>Curated destinations with pre-verified security and luxury logistics.</p>
-            </div>
-            <div class="visual-stack">
-                <div class="recon-card large" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200');">
-                    <div class="card-meta">
-                        <h3>CASA ARIZONA</h3>
-                        <span>Sedona // Sector 7</span>
+            <h2 class="section-title">Global Blueprints</h2>
+            <div class="dest-grid">
+                <div class="dest-card">
+                    <div class="img-wrap" style="background-image: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=600');"></div>
+                    <div class="dest-info">
+                        <h3>Sedona // Casa Arizona</h3>
+                        <p>Integrated Flight + Fleet + Stay</p>
+                        <span class="price">From $1,200</span>
                     </div>
                 </div>
-                <div class="recon-card" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600');">
-                    <div class="card-meta">
-                        <h3>SHINJUKU PULSE</h3>
-                        <span>Tokyo // Sector 3</span>
-                    </div>
                 </div>
-                <div class="recon-card" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=600');">
-                    <div class="card-meta">
-                        <h3>EMIRATE CORE</h3>
-                        <span>Dubai // Sector 1</span>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 

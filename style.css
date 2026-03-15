@@ -74,3 +74,65 @@ h1 { font-family: 'Syncopate'; font-size: 50px; margin-bottom: 20px; letter-spac
 .ad-text { padding: 40px; flex: 2; text-align: left; }
 .ad-visual { flex: 1; background-size: cover; background-position: center; }
 .ad-tag { font-size: 10px; font-weight: 900; color: var(--gold); }
+/* Split Layout */
+.split-registration {
+    display: flex;
+    min-height: 100vh;
+}
+
+.reg-info-panel {
+    flex: 1;
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f2?q=80&w=1200') center/cover;
+    color: #fff;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reg-form-panel {
+    flex: 1.2;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Brand & Icons */
+.logo-white { font-family: 'Syncopate'; font-size: 28px; font-weight: 700; letter-spacing: 2px; }
+.logo-white span { color: var(--gold); }
+
+.value-stack { margin-top: -100px; }
+.value-item { display: flex; gap: 20px; margin-bottom: 40px; align-items: flex-start; }
+.value-item i { font-size: 24px; color: var(--gold); margin-top: 5px; }
+.value-item h4 { font-family: 'Syncopate'; font-size: 14px; margin-bottom: 8px; color: var(--gold); }
+.value-item p { font-size: 14px; opacity: 0.8; line-height: 1.5; }
+
+/* Form Aesthetics */
+.form-card { width: 100%; max-width: 500px; }
+.form-header h2 { font-family: 'Syncopate'; font-size: 26px; color: var(--navy); margin-bottom: 10px; }
+.form-header p { color: #64748B; margin-bottom: 30px; }
+
+.input-row { display: flex; gap: 20px; }
+.input-group { margin-bottom: 20px; flex: 1; }
+.input-group label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; color: #94A3B8; margin-bottom: 8px; }
+.input-group input { width: 100%; padding: 14px; border: 1px solid #E2E8F0; border-radius: 4px; font-size: 15px; background: #F8FAFC; outline: none; transition: 0.3s; }
+.input-group input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1); }
+
+/* Tier Selector */
+.membership-tier-selector { margin-bottom: 30px; }
+.tier-options { display: flex; gap: 15px; margin-top: 10px; }
+.tier-box { flex: 1; border: 2px solid #E2E8F0; padding: 15px; border-radius: 8px; cursor: pointer; position: relative; transition: 0.3s; }
+.tier-box input { position: absolute; opacity: 0; }
+.tier-box:has(input:checked) { border-color: var(--gold); background: #FFFDF5; }
+.tier-box.elite { border-color: #F1F5F9; background: #F8FAFC; }
+.tier-name { display: block; font-weight: 800; font-size: 13px; color: var(--navy); }
+.tier-price { font-size: 12px; color: #64748B; }
+
+.btn-initialize { width: 100%; padding: 18px; background: var(--navy); color: #fff; border: none; font-weight: 800; font-family: 'Syncopate'; cursor: pointer; border-radius: 4px; transition: 0.3s; }
+.btn-initialize:hover { background: #000; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+.terms-text { font-size: 11px; color: #94A3B8; margin-top: 20px; text-align: center; }
+.form-footer { margin-top: 30px; text-align: center; border-top: 1px solid #F1F5F9; padding-top: 20px; font-size: 14px; }
+.form-footer a { color: var(--gold); font-weight: 700; text-decoration: none; margin-left: 5px; }

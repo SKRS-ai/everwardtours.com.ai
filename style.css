@@ -1,76 +1,64 @@
 :root {
     --gold: #D4AF37;
-    --deep-black: #050505;
-    --charcoal: #111111;
-    --glass: rgba(255, 255, 255, 0.03);
-    --border: rgba(212, 175, 55, 0.2);
+    --obsidian: #050505;
+    --card: #111111;
+    --border: rgba(212, 175, 55, 0.15);
 }
 
+/* 1. Core Structural Fix */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-    background-color: var(--deep-black) !important;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
+body { 
+    background-color: var(--obsidian) !important; 
+    color: #fff; 
+    font-family: 'Inter', sans-serif; 
     overflow-x: hidden;
 }
 
-/* Header & Branding */
-.main-header {
-    padding: 20px 0;
-    background: rgba(5,5,5,0.9);
-    backdrop-filter: blur(20px);
+/* 2. Header Design */
+.header-main {
+    padding: 20px 0; background: rgba(5, 5, 5, 0.95);
     border-bottom: 1px solid var(--border);
     position: fixed; top: 0; width: 100%; z-index: 1000;
 }
-
 .header-container { width: 94%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
 
-.brand-side { display: flex; align-items: center; gap: 30px; }
-.logo { font-family: 'Syncopate', sans-serif; font-size: 20px; letter-spacing: 4px; font-weight: 700; }
+.brand-unit { display: flex; align-items: center; gap: 15px; }
+.logo { font-family: 'Syncopate', sans-serif; font-size: 18px; letter-spacing: 3px; font-weight: 700; }
 .logo span { color: var(--gold); }
 
-.market-ticker { display: flex; gap: 20px; border-left: 1px solid #333; padding-left: 20px; font-size: 10px; color: #666; letter-spacing: 1px; }
-.gold-text { color: var(--gold); }
+.logistics-nav { display: flex; gap: 30px; }
+.logistics-nav a { text-decoration: none; color: #777; font-size: 11px; font-weight: 600; transition: 0.3s; }
+.logistics-nav a:hover { color: var(--gold); }
 
-/* Unified Search Engine */
-.unified-search-box {
-    background: var(--charcoal);
-    border: 1px solid #222;
-    padding: 10px;
-    margin-top: 50px;
-    box-shadow: 0 40px 100px rgba(0,0,0,1);
-    width: 100%;
-    max-width: 1100px;
+.access-unit { display: flex; gap: 15px; }
+.btn-minimal { background: none; border: 1px solid #333; color: #fff; padding: 8px 18px; cursor: pointer; }
+.btn-gold { background: var(--gold); color: #000; border: none; padding: 8px 22px; font-weight: 800; cursor: pointer; }
+
+/* 3. Hero & Unified Engine */
+.hero-command {
+    height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(rgba(5,5,5,0.4), var(--obsidian)), url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f2?q=80&w=1920');
+    background-size: cover; background-position: center; text-align: center;
 }
+.hero-content { width: 90%; max-width: 1100px; z-index: 10; }
+.intel-tag { color: var(--gold); font-size: 10px; letter-spacing: 6px; margin-bottom: 20px; }
+h1 { font-family: 'Syncopate'; font-size: clamp(35px, 7vw, 90px); letter-spacing: -3px; margin-bottom: 15px; }
 
-.search-tabs { display: flex; background: #000; padding: 5px; margin-bottom: 10px; }
-.search-tab { 
-    background: none; border: none; color: #555; padding: 12px 25px; 
-    font-size: 11px; text-transform: uppercase; letter-spacing: 1px; cursor: pointer;
-}
-.search-tab.active { background: var(--charcoal); color: var(--gold); font-weight: 700; }
+.unified-engine { background: var(--card); border: 1px solid #222; padding: 10px; margin-top: 40px; }
+.engine-header { display: flex; justify-content: space-between; padding: 15px; font-size: 10px; text-transform: uppercase; color: #555; }
+.price-guarantee { color: var(--gold); font-weight: 800; }
 
-.search-engine-form { display: flex; gap: 0; background: #1a1a1a; }
-.input-set { flex: 1; padding: 20px; display: flex; flex-direction: column; text-align: left; }
-.input-set label { font-size: 9px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
-.input-set input { background: none; border: none; color: #fff; font-size: 16px; outline: none; }
-.border-left { border-left: 1px solid #333; }
+.search-grid { display: flex; background: #000; }
+.input-block { flex: 1; padding: 20px; text-align: left; }
+.input-block label { font-size: 9px; color: var(--gold); text-transform: uppercase; margin-bottom: 8px; display: block; }
+.input-block input { background: none; border: none; color: #fff; font-size: 15px; width: 100%; outline: none; }
+.b-left { border-left: 1px solid #222; }
 
-.execute-search-btn {
-    background: var(--gold); color: #000; border: none; padding: 0 40px; 
-    font-weight: 900; cursor: pointer; display: flex; align-items: center; gap: 15px;
-}
+.btn-execute { background: var(--gold); color: #000; border: none; padding: 0 40px; font-weight: 900; cursor: pointer; display: flex; align-items: center; gap: 15px; }
 
-.database-status { padding: 15px; font-size: 10px; color: #444; text-transform: uppercase; letter-spacing: 2px; }
-
-/* Hero */
-.hero-logistics {
-    height: 90vh; display: flex; align-items: center; justify-content: center;
-    background: url('https://images.unsplash.com/photo-1464010138582-444400f666bb?q=80&w=1920') center/cover;
-    position: relative; text-align: center;
-}
-.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent, var(--deep-black)); }
-.hero-content { position: relative; z-index: 10; width: 90%; }
-.pre-title { color: var(--gold); font-size: 11px; letter-spacing: 6px; margin-bottom: 20px; }
-h1 { font-family: 'Syncopate'; font-size: clamp(30px, 6vw, 80px); letter-spacing: -2px; margin-bottom: 20px; }
+/* 4. Visual recon cards */
+.visual-stack { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; gap: 20px; height: 600px; margin-top: 40px; }
+.recon-card { background-size: cover; background-position: center; position: relative; border: 1px solid #222; }
+.recon-card.large { grid-row: span 2; }
+.card-meta { position: absolute; bottom: 30px; left: 30px; }
+.card-meta h3 { font-family: 'Syncopate'; font-size: 18px; }

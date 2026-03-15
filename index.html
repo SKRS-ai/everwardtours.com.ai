@@ -3,70 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVERWARD TOURS | Global Citizen Elite</title>
+    <title>EVERWARD TOURS | Global Citizen Logistics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="prestige-theme">
 
     <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">EVERWARD</span>
+        <div class="container">
+            <div class="logo-group">
+                <div class="logo">EVERWARD<span>TOURS</span></div>
+                <div class="security-status"><span class="pulse"></span> System: Secure</div>
             </div>
-            <div class="auth-group">
-                <button class="btn-gold">Sign In</button>
+            <nav class="nav-links">
+                <a href="#">Stays</a>
+                <a href="#">Aviation</a>
+                <a href="#">Risk Data</a>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn-text" onclick="toggleAuth('register')">Membership</button>
+                <button class="btn-gold" onclick="toggleAuth('login')">Sign In</button>
             </div>
         </div>
     </header>
 
-    <section class="casa-arizona-hero">
+    <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="fade-in">Casa Arizona</h1>
-            <p class="subtitle">Secure Desert Blueprint // Location: Sedona</p>
+            <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Sedona, Arizona // Sector 7</span>
+            <h1>CASA ARIZONA</h1>
+            <p>Exclusive High-Logistics Blueprint. Secure Perimeter. Elite Amenities.</p>
 
             <div class="search-shield">
-                <div class="mode-toggles">
-                    <button class="m-btn active">Pedestrian</button>
-                    <button class="m-btn">Aviation</button>
-                    <button class="m-btn">Fleet</button>
+                <div class="search-tabs">
+                    <button class="tab active">Accommodations</button>
+                    <button class="tab">Transport Sync</button>
                 </div>
-                <form class="booking-engine">
-                    <div class="field">
-                        <i class="fa-solid fa-location-arrow"></i>
-                        <input type="text" placeholder="Check Availability">
+                <form class="search-engine">
+                    <div class="input-group">
+                        <label>Availability</label>
+                        <input type="text" placeholder="Select Dates">
                     </div>
-                    <div class="field">
-                        <i class="fa-solid fa-calendar-day"></i>
-                        <input type="text" placeholder="Dates">
+                    <div class="input-group divider">
+                        <label>Travelers</label>
+                        <input type="text" placeholder="1 Adult, 0 Kids">
                     </div>
-                    <button type="submit" class="btn-execute">Initialize</button>
+                    <button type="submit" class="btn-execute">EXECUTE BOOKING</button>
                 </form>
+                <div class="urgency-label"><i class="fa-solid fa-fire"></i> 3 Global Citizens currently viewing this blueprint.</div>
             </div>
         </div>
     </section>
 
     <section class="blueprint-gallery">
         <div class="container">
-            <h2 class="section-title">Visual Reconnaissance</h2>
             <div class="gallery-grid">
-                <div class="photo-card large">
-                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1200" alt="Arizona Exterior">
-                    <div class="p-info">Exterior Perimeter</div>
+                <div class="img-box large">
+                    <img src="arizona-main.jpg" alt="Casa Arizona Exterior">
+                    <div class="img-label">Exterior Perimeter // 01</div>
                 </div>
-                <div class="photo-card">
-                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=600" alt="Arizona View">
-                    <div class="p-info">Deck Vantage</div>
+                <div class="img-box">
+                    <img src="arizona-int.jpg" alt="Interior">
+                    <div class="img-label">Primary Suite // 02</div>
                 </div>
-                <div class="photo-card">
-                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=600" alt="Interior">
-                    <div class="p-info">Secure Suite</div>
+                <div class="img-box">
+                    <img src="arizona-view.jpg" alt="View">
+                    <div class="img-label">Deck Vantage // 03</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleAuth()">&times;</span>
+            <h2 id="modalTitle">Member Login</h2>
+            <div class="modal-body">
+                <input type="email" placeholder="Email Address">
+                <input type="password" placeholder="Password">
+                <button class="btn-gold-fill">INITIALIZE SESSION</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAuth(type) {
+            const modal = document.getElementById('authModal');
+            if(!type) { modal.style.display = 'none'; return; }
+            modal.style.display = 'flex';
+            document.getElementById('modalTitle').innerText = type === 'login' ? 'Member Login' : 'Join Network';
+        }
+    </script>
 </body>
 </html>

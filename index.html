@@ -5,83 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVERWARD TOURS | Global Citizen Logistics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="prestige-theme">
 
     <header class="navbar">
         <div class="container">
-            <div class="logo-group">
+            <div class="brand-block">
+                <div class="unbroken-compass"></div>
                 <div class="logo">EVERWARD<span>TOURS</span></div>
-                <div class="security-status"><span class="pulse"></span> System: Secure</div>
             </div>
             <nav class="nav-links">
-                <a href="#">Stays</a>
-                <a href="#">Aviation</a>
-                <a href="#">Risk Data</a>
+                <a href="#stays" class="active">Stays</a>
+                <a href="#aviation">Aviation</a>
+                <a href="#fleet">Fleet</a>
+                <a href="#risk">Risk Analysis</a>
             </nav>
-            <div class="auth-buttons">
-                <button class="btn-text" onclick="toggleAuth('register')">Membership</button>
+            <div class="auth-zone">
+                <button class="btn-ghost" onclick="toggleAuth('register')">Membership</button>
                 <button class="btn-gold" onclick="toggleAuth('login')">Sign In</button>
             </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Sedona, Arizona // Sector 7</span>
-            <h1>CASA ARIZONA</h1>
-            <p>Exclusive High-Logistics Blueprint. Secure Perimeter. Elite Amenities.</p>
+    <section class="hero-sector">
+        <div class="hero-video-bg">
+            <div class="overlay-gradient"></div>
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1920" alt="Arizona Blueprint" class="main-hero-img">
+        </div>
 
-            <div class="search-shield">
-                <div class="search-tabs">
-                    <button class="tab active">Accommodations</button>
-                    <button class="tab">Transport Sync</button>
+        <div class="hero-container">
+            <div class="blueprint-meta">
+                <span class="sector-code">SECTOR: ARIZONA // 001</span>
+                <h1 class="glitch-title">CASA ARIZONA</h1>
+                <p class="hero-sub">Secure Logistics & Luxury Integration for the Global Citizen.</p>
+            </div>
+
+            <div class="search-engine-shield">
+                <div class="mode-selector">
+                    <button class="mode-tab active"><i class="fa-solid fa-person-walking"></i> Pedestrian</button>
+                    <button class="mode-tab"><i class="fa-solid fa-plane"></i> Aviation</button>
+                    <button class="mode-tab"><i class="fa-solid fa-car-side"></i> Fleet</button>
                 </div>
-                <form class="search-engine">
-                    <div class="input-group">
-                        <label>Availability</label>
-                        <input type="text" placeholder="Select Dates">
+                <form class="search-logic">
+                    <div class="input-wrap">
+                        <label>Target Location</label>
+                        <input type="text" placeholder="Confirm Destination">
                     </div>
-                    <div class="input-group divider">
-                        <label>Travelers</label>
-                        <input type="text" placeholder="1 Adult, 0 Kids">
+                    <div class="input-wrap border-left">
+                        <label>Timeline</label>
+                        <input type="text" placeholder="Check Availability">
                     </div>
                     <button type="submit" class="btn-execute">EXECUTE BOOKING</button>
                 </form>
-                <div class="urgency-label"><i class="fa-solid fa-fire"></i> 3 Global Citizens currently viewing this blueprint.</div>
+                <div class="system-status"><span class="pulse"></span> Active Users Tracking this Blueprint: 04</div>
             </div>
         </div>
     </section>
 
-    <section class="blueprint-gallery">
+    <section class="visual-recon">
         <div class="container">
-            <div class="gallery-grid">
-                <div class="img-box large">
-                    <img src="arizona-main.jpg" alt="Casa Arizona Exterior">
-                    <div class="img-label">Exterior Perimeter // 01</div>
+            <div class="gallery-layout">
+                <div class="photo-large">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1200" alt="Exterior">
+                    <div class="label">Exterior Perimeter</div>
                 </div>
-                <div class="img-box">
-                    <img src="arizona-int.jpg" alt="Interior">
-                    <div class="img-label">Primary Suite // 02</div>
+                <div class="photo-side">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=600" alt="View">
+                    <div class="label">Deck Vantage</div>
                 </div>
-                <div class="img-box">
-                    <img src="arizona-view.jpg" alt="View">
-                    <div class="img-label">Deck Vantage // 03</div>
+                <div class="photo-side">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=600" alt="Interior">
+                    <div class="label">Secure Suite</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="authModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="toggleAuth()">&times;</span>
-            <h2 id="modalTitle">Member Login</h2>
-            <div class="modal-body">
-                <input type="email" placeholder="Email Address">
-                <input type="password" placeholder="Password">
+    <div id="authModal" class="modal-overlay">
+        <div class="modal-card">
+            <span class="close-modal" onclick="toggleAuth()">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Member Access</h2>
+                <p>Initialize your Global Citizen credentials.</p>
+            </div>
+            <div class="modal-inputs">
+                <input type="email" placeholder="Corporate Email">
+                <input type="password" placeholder="Access Key">
                 <button class="btn-gold-fill">INITIALIZE SESSION</button>
             </div>
         </div>
@@ -92,8 +103,9 @@
             const modal = document.getElementById('authModal');
             if(!type) { modal.style.display = 'none'; return; }
             modal.style.display = 'flex';
-            document.getElementById('modalTitle').innerText = type === 'login' ? 'Member Login' : 'Join Network';
+            document.getElementById('modalTitle').innerText = type === 'login' ? 'Member Access' : 'Create Legacy';
         }
     </script>
+
 </body>
 </html>

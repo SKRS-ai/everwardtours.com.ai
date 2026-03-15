@@ -1,84 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everward Tours | The Global Citizen Standard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="prestige-theme">
-
-    <header class="navbar">
-        <div class="container flex-row">
-            <div class="logo">
-                <div class="compass-icon"></div>
-                <span class="logo-text">EVERWARD</span>
-            </div>
-            
-            <nav class="nav-links">
-                <a href="#" class="active">Stays</a>
-                <a href="#">Fleet</a>
-                <a href="#">Aviation</a>
-                <a href="#">Risk Analysis</a>
-            </nav>
-
-            <div class="auth-group">
-                <button class="btn-minimal">Membership</button>
-                <button class="btn-prestige">Sign In</button>
-            </div>
+<div id="authModal" class="modal-overlay">
+    <div class="modal-glass">
+        <button class="close-modal" onclick="toggleModal()">&times;</button>
+        
+        <div class="modal-tabs">
+            <button class="auth-tab active" onclick="switchAuth('login')">Sign In</button>
+            <button class="auth-tab" onclick="switchAuth('register')">Join the Network</button>
         </div>
-    </header>
 
-    <section class="hero-block">
-        <div class="video-overlay"></div>
-        <video autoplay muted loop id="hero-video">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-luxury-private-jet-at-the-airport-40156-large.mp4" type="video/mp4">
-        </video>
-
-        <div class="hero-text container">
-            <h1 class="fade-up">Move with Intent.</h1>
-            <p class="fade-up-delay">The world is your territory. We provide the logistics.</p>
-
-            <div class="search-engine glass-card">
-                <div class="intent-tabs">
-                    <button class="intent-tab active"><i class="fa-solid fa-person-walking"></i> Pedestrian</button>
-                    <button class="intent-tab"><i class="fa-solid fa-plane-private"></i> Aviation</button>
-                    <button class="intent-tab"><i class="fa-solid fa-car-rear"></i> Executive Fleet</button>
+        <form id="loginForm" class="auth-form">
+            <h2>Welcome Back, Citizen.</h2>
+            <div class="input-wrap">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-wrap">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn-prestige-gold">Initialize Session</button>
+            <div class="social-auth">
+                <span>Or connect via</span>
+                <div class="icons">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-apple"></i>
+                    <i class="fa-brands fa-github"></i>
                 </div>
+            </div>
+        </form>
 
-                <form class="search-row">
-                    <div class="search-input">
-                        <label>Target Destination</label>
-                        <input type="text" placeholder="Where next, Citizen?">
-                    </div>
-                    <div class="search-input">
-                        <label>Timeline</label>
-                        <input type="text" placeholder="Check Availability">
-                    </div>
-                    <button type="submit" class="search-trigger">Initialize Search</button>
-                </form>
+        <form id="registerForm" class="auth-form hidden">
+            <h2>Begin Your Legacy.</h2>
+            <p class="modal-sub">Access the Everward ecosystem and secure your travel blueprints.</p>
+            <div class="input-wrap">
+                <input type="text" placeholder="Full Legal Name" required>
             </div>
-        </div>
-    </section>
-
-    <div class="logistics-bar">
-        <div class="container flex-row">
-            <div class="log-item">
-                <i class="fa-solid fa-microchip"></i>
-                <span><strong>Everward AI:</strong> Real-time Logistics Syncing</span>
+            <div class="input-wrap">
+                <input type="email" placeholder="Corporate Email" required>
             </div>
-            <div class="log-item">
-                <i class="fa-solid fa-shield-halved"></i>
-                <span><strong>Citizen Defense:</strong> Security-Vetted Properties</span>
+            <div class="input-wrap">
+                <select>
+                    <option disabled selected>Primary Travel Mode</option>
+                    <option>Executive Aviation</option>
+                    <option>Elite Pedestrian</option>
+                    <option>Private Fleet</option>
+                </select>
             </div>
-            <div class="log-item">
-                <i class="fa-solid fa-passport"></i>
-                <span><strong>Global Access:</strong> 120+ Countries Managed</span>
-            </div>
-        </div>
+            <button type="submit" class="btn-prestige-gold">Create Account</button>
+        </form>
     </div>
-
-</body>
-</html>
+</div>

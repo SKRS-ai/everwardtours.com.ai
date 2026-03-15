@@ -3,133 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everward Tours | Everywhere Forward</title>
+    <title>Everward Tours | The Global Citizen Standard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="prestige-theme">
 
-    <header class="glass-nav">
-        <div class="container nav-wrapper">
-            <div class="logo-area">
-                <div class="unbroken-compass"></div> <span class="brand-name">EVERWARD<span class="tours-suffix">TOURS</span></span>
+    <header class="navbar">
+        <div class="container flex-row">
+            <div class="logo">
+                <div class="compass-icon"></div>
+                <span class="logo-text">EVERWARD</span>
             </div>
             
-            <nav class="desktop-menu">
-                <a href="#" class="nav-link active"><i class="fa-solid fa-bed"></i> Stays</a>
-                <a href="#" class="nav-link"><i class="fa-solid fa-plane"></i> Flights</a>
-                <a href="#" class="nav-link"><i class="fa-solid fa-car"></i> Rentals</a>
-                <a href="#" class="nav-link"><i class="fa-solid fa-shield-heart"></i> Protection</a>
+            <nav class="nav-links">
+                <a href="#" class="active">Stays</a>
+                <a href="#">Fleet</a>
+                <a href="#">Aviation</a>
+                <a href="#">Risk Analysis</a>
             </nav>
 
-            <div class="auth-zone">
-                <button class="btn-text">Register</button>
-                <button class="btn-glow">Sign In</button>
+            <div class="auth-group">
+                <button class="btn-minimal">Membership</button>
+                <button class="btn-prestige">Sign In</button>
             </div>
         </div>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="reveal-text">Where is your intent taking you?</h1>
-            <p class="subtitle">Personalized logistics for the Global Citizen.</p>
+    <section class="hero-block">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop id="hero-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-luxury-private-jet-at-the-airport-40156-large.mp4" type="video/mp4">
+        </video>
 
-            <div class="search-hub card-glass">
-                <div class="mode-tabs">
-                    <button class="mode-tab active" title="Pedestrian Mode"><i class="fa-solid fa-person-walking"></i></button>
-                    <button class="mode-tab" title="Transit Mode"><i class="fa-solid fa-train-subway"></i></button>
-                    <button class="mode-tab" title="Driver Mode"><i class="fa-solid fa-car"></i></button>
-                    <button class="mode-tab" title="Flyer Mode"><i class="fa-solid fa-plane-up"></i></button>
+        <div class="hero-text container">
+            <h1 class="fade-up">Move with Intent.</h1>
+            <p class="fade-up-delay">The world is your territory. We provide the logistics.</p>
+
+            <div class="search-engine glass-card">
+                <div class="intent-tabs">
+                    <button class="intent-tab active"><i class="fa-solid fa-person-walking"></i> Pedestrian</button>
+                    <button class="intent-tab"><i class="fa-solid fa-plane-private"></i> Aviation</button>
+                    <button class="intent-tab"><i class="fa-solid fa-car-rear"></i> Executive Fleet</button>
                 </div>
 
-                <form class="search-grid">
-                    <div class="search-field">
-                        <label>Destination</label>
-                        <div class="input-with-icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <input type="text" placeholder="Philly, Tokyo, Everywhere...">
-                        </div>
+                <form class="search-row">
+                    <div class="search-input">
+                        <label>Target Destination</label>
+                        <input type="text" placeholder="Where next, Citizen?">
                     </div>
-                    <div class="search-field">
-                        <label>Dates</label>
-                        <div class="input-with-icon">
-                            <i class="fa-regular fa-calendar"></i>
-                            <input type="text" placeholder="Add dates">
-                        </div>
+                    <div class="search-input">
+                        <label>Timeline</label>
+                        <input type="text" placeholder="Check Availability">
                     </div>
-                    <div class="search-field">
-                        <label>Travelers</label>
-                        <div class="input-with-icon">
-                            <i class="fa-solid fa-user-group"></i>
-                            <input type="text" placeholder="1 Adult, 0 Kids">
-                        </div>
-                    </div>
-                    <button type="submit" class="btn-search">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="submit" class="search-trigger">Initialize Search</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <section class="security-ribbon">
-        <div class="container flex-between">
-            <div class="trust-item">
-                <i class="fa-solid fa-shield-check"></i>
-                <span><strong>Citizen Verified:</strong> Real-time risk assessment included.</span>
+    <div class="logistics-bar">
+        <div class="container flex-row">
+            <div class="log-item">
+                <i class="fa-solid fa-microchip"></i>
+                <span><strong>Everward AI:</strong> Real-time Logistics Syncing</span>
             </div>
-            <div class="trust-item">
-                <i class="fa-solid fa-bolt"></i>
-                <span><strong>Instant Sync:</strong> Auto-loads to Everward.app.</span>
+            <div class="log-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span><strong>Citizen Defense:</strong> Security-Vetted Properties</span>
             </div>
-            <div class="trust-item">
-                <i class="fa-solid fa-handshake-angle"></i>
-                <span><strong>24/7 Support:</strong> Tactical assistance available.</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="destinations container">
-        <div class="section-header">
-            <h2>Joe's Blueprints</h2>
-            <p>Curated routes with integrated security and logistics.</p>
-        </div>
-        <div class="grid-3">
-            <div class="dest-card">
-                <div class="badge">Safe Zone</div>
-                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=600" alt="Paris">
-                <div class="dest-info">
-                    <h3>Paris Noir</h3>
-                    <p>5 Nights · Executive Protection Optional</p>
-                    <span class="price">From $1,240</span>
-                </div>
-            </div>
-            </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <h3>Global Citizen Joe LLC</h3>
-                <p>Engineering the future of secure, seamless movement.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Ecosystem</h4>
-                <a href="#">Everward.app</a>
-                <a href="#">Citizen Defense & Risk</a>
-                <a href="#">Traveler Portal</a>
-            </div>
-            <div class="footer-links">
-                <h4>Compliance</h4>
-                <a href="#">Privacy Protocol</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">SOT Disclosure</a>
+            <div class="log-item">
+                <i class="fa-solid fa-passport"></i>
+                <span><strong>Global Access:</strong> 120+ Countries Managed</span>
             </div>
         </div>
-        <div class="legal-bar container">
-            <p>&copy; 2026 EVERWARD. Built for the modern traveler.</p>
-        </div>
-    </footer>
+    </div>
 
 </body>
 </html>

@@ -83,3 +83,83 @@ h1, .logo-text {
 .modal-content { background: #111; padding: 50px; border: 1px solid var(--gold); width: 400px; position: relative; }
 .btn-gold { width: 100%; padding: 15px; margin-top: 20px; background: var(--gold); border: none; font-weight: bold; cursor: pointer; }
 .close { position: absolute; top: 20px; right: 20px; font-size: 30px; cursor: pointer; }
+/* Elite Blueprints Section */
+.elite-blueprints {
+    padding: 100px 0;
+    background: var(--black);
+}
+
+.section-intro { margin-bottom: 60px; text-align: left; padding-left: 5%; }
+.gold-subtitle { color: var(--gold); font-size: 14px; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 10px; }
+.section-description { font-size: 24px; font-weight: 300; color: #ccc; max-width: 600px; }
+
+.blueprint-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.blueprint-card {
+    background: #111;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.4s ease;
+}
+
+.blueprint-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-10px);
+}
+
+.card-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: 0.6s transform;
+}
+
+.blueprint-card:hover .card-image img { transform: scale(1.1); }
+
+.card-overlay {
+    position: absolute; top: 20px; left: 20px;
+}
+
+.status-badge {
+    background: rgba(0,0,0,0.7);
+    padding: 8px 15px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #444;
+}
+
+.status-badge.gold { border-color: var(--gold); color: var(--gold); }
+
+.card-details { padding: 30px; }
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.card-header h3 { font-family: 'Syncopate', sans-serif; font-size: 16px; color: #fff; }
+.price-tag { color: var(--gold); font-weight: bold; }
+
+.card-details p { font-size: 13px; color: #888; margin-bottom: 25px; line-height: 1.6; }
+
+.card-meta {
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    font-size: 11px;
+}
+
+.btn-outline {
+    text-decoration: none;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover { background: var(--gold); color: #000; }

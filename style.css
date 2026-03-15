@@ -62,3 +62,97 @@ h1 { font-family: 'Syncopate'; font-size: clamp(35px, 7vw, 90px); letter-spacing
 .recon-card.large { grid-row: span 2; }
 .card-meta { position: absolute; bottom: 30px; left: 30px; }
 .card-meta h3 { font-family: 'Syncopate'; font-size: 18px; }
+/* Checkout Specific Layout */
+.checkout-container {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 80px; /* Offset for fixed header */
+    background: var(--obsidian);
+}
+
+.logistics-summary {
+    flex: 2;
+    padding: 60px;
+    border-right: 1px solid var(--border);
+}
+
+.payment-vault {
+    flex: 1;
+    background: var(--card);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Timeline Bridge Visuals */
+.timeline-bridge {
+    margin-top: 50px;
+    position: relative;
+}
+
+.bridge-segment {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-left: 2px solid #222;
+    transition: 0.3s;
+}
+
+.bridge-segment.active {
+    border-left-color: var(--gold);
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.segment-icon {
+    font-size: 24px;
+    color: #444;
+}
+
+.active .segment-icon { color: var(--gold); }
+
+.status-tag {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+}
+
+/* Payment Vault Styling */
+.price-display {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: 'Syncopate';
+    color: var(--gold);
+    margin: 20px 0;
+}
+
+.vault-form label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.card-input {
+    background: #000;
+    border: 1px solid #333;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-authorize {
+    background: var(--gold);
+    color: #000;
+    border: none;
+    padding: 20px;
+    font-weight: 900;
+    font-family: 'Syncopate';
+    cursor: pointer;
+    margin-top: auto;
+}

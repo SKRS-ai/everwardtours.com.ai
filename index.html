@@ -15,99 +15,58 @@
             <div class="logo">
                 <span class="logo-text">EVERWARD</span>
             </div>
-            <nav class="nav-links">
-                <a href="#" class="active">Stays</a>
-                <a href="#">Aviation</a>
-                <a href="#">Fleet</a>
-                <a href="#">Security</a>
-            </nav>
             <div class="auth-group">
-                <button class="btn-text">Membership</button>
-                <button class="btn-gold" onclick="document.getElementById('authModal').style.display='flex'">Sign In</button>
+                <button class="btn-gold">Sign In</button>
             </div>
         </div>
     </header>
 
-   <section class="elite-blueprints">
-    <div class="container">
-        <div class="section-intro">
-            <h2 class="gold-subtitle">Active Blueprints</h2>
-            <p class="section-description">Curated logistics. Secured perimeters. Unrivaled access.</p>
+    <section class="casa-arizona-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Casa Arizona</h1>
+            <p class="subtitle">Secure Desert Blueprint // Location: Sedona</p>
+
+            <div class="search-shield">
+                <div class="mode-toggles">
+                    <button class="m-btn active">Pedestrian</button>
+                    <button class="m-btn">Aviation</button>
+                    <button class="m-btn">Fleet</button>
+                </div>
+                <form class="booking-engine">
+                    <div class="field">
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <input type="text" placeholder="Check Availability">
+                    </div>
+                    <div class="field">
+                        <i class="fa-solid fa-calendar-day"></i>
+                        <input type="text" placeholder="Dates">
+                    </div>
+                    <button type="submit" class="btn-execute">Initialize</button>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <div class="blueprint-grid">
-            <div class="blueprint-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=800" alt="Tokyo Shinjuku">
-                    <div class="card-overlay">
-                        <span class="status-badge"><i class="fa-solid fa-circle-check"></i> Safe Zone</span>
-                    </div>
+    <section class="blueprint-gallery">
+        <div class="container">
+            <h2 class="section-title">Visual Reconnaissance</h2>
+            <div class="gallery-grid">
+                <div class="photo-card large">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1200" alt="Arizona Exterior">
+                    <div class="p-info">Exterior Perimeter</div>
                 </div>
-                <div class="card-details">
-                    <div class="card-header">
-                        <h3>Shinjuku Protocol</h3>
-                        <span class="price-tag">From $2,800</span>
-                    </div>
-                    <p>Logistics: High-Speed Rail & Executive Pedestrian Mode.</p>
-                    <div class="card-meta">
-                        <span><i class="fa-solid fa-shield"></i> Security Level: Alpha</span>
-                        <a href="#" class="btn-outline">View Blueprint</a>
-                    </div>
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=600" alt="Arizona View">
+                    <div class="p-info">Deck Vantage</div>
                 </div>
-            </div>
-
-            <div class="blueprint-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=800" alt="Dubai Skyline">
-                    <div class="card-overlay">
-                        <span class="status-badge gold"><i class="fa-solid fa-star"></i> Elite Access</span>
-                    </div>
-                </div>
-                <div class="card-details">
-                    <div class="card-header">
-                        <h3>Emirate Aviation</h3>
-                        <span class="price-tag">From $4,500</span>
-                    </div>
-                    <p>Logistics: Private Jet & Armored Fleet Pickup.</p>
-                    <div class="card-meta">
-                        <span><i class="fa-solid fa-shield"></i> Security Level: Tactical</span>
-                        <a href="#" class="btn-outline">View Blueprint</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="blueprint-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800" alt="Paris Noir">
-                    <div class="card-overlay">
-                        <span class="status-badge"><i class="fa-solid fa-circle-check"></i> Safe Zone</span>
-                    </div>
-                </div>
-                <div class="card-details">
-                    <div class="card-header">
-                        <h3>Parisian Noir</h3>
-                        <span class="price-tag">From $3,100</span>
-                    </div>
-                    <p>Logistics: Luxury Walk & Seine River Private Vessel.</p>
-                    <div class="card-meta">
-                        <span><i class="fa-solid fa-shield"></i> Security Level: Alpha</span>
-                        <a href="#" class="btn-outline">View Blueprint</a>
-                    </div>
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=600" alt="Interior">
+                    <div class="p-info">Secure Suite</div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-    <div id="authModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="document.getElementById('authModal').style.display='none'">&times;</span>
-            <h2>Member Access</h2>
-            <input type="email" placeholder="Email Address">
-            <input type="password" placeholder="Password">
-            <button class="btn-gold">Initialize Session</button>
-        </div>
-    </div>
+    </section>
 
 </body>
 </html>

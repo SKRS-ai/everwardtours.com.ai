@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout | Everward Logistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="command-theme">
+
+    <div class="checkout-container">
+        <main class="logistics-summary">
+            <header class="checkout-header">
+                <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Return to Command</a>
+                <h1>Mission Blueprint: Sedona</h1>
+            </header>
+
+            <div class="timeline-bridge">
+                <div class="bridge-segment">
+                    <div class="segment-icon"><i class="fa-solid fa-plane-departure"></i></div>
+                    <div class="segment-info">
+                        <h3>Aviation Sector</h3>
+                        <p>PHL → PHX // Executive Class</p>
+                        <span class="status-tag">Synced</span>
+                    </div>
+                </div>
+
+                <div class="bridge-segment active">
+                    <div class="segment-icon"><i class="fa-solid fa-car-side"></i></div>
+                    <div class="segment-info">
+                        <h3>Ground Fleet Integration</h3>
+                        <p>Private Pickup: PHX Sky Harbor</p>
+                        <span class="status-tag gold">Best Rate Locked</span>
+                    </div>
+                </div>
+
+                <div class="bridge-segment">
+                    <div class="segment-icon"><i class="fa-solid fa-house-shield"></i></div>
+                    <div class="segment-info">
+                        <h3>Secure Stay</h3>
+                        <p>Casa Arizona // Sedona Sector</p>
+                        <span class="status-tag">Pending Authorization</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="payment-vault">
+            <div class="vault-header">
+                <h2>Total Logistics Investment</h2>
+                <p class="price-display">$3,240.00</p>
+            </div>
+
+            <form class="vault-form">
+                <label>Member Identity</label>
+                <input type="text" placeholder="Global Citizen Joe" disabled>
+                
+                <label>Secure Payment Method</label>
+                <div class="card-input">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <input type="text" placeholder="XXXX XXXX XXXX 2026">
+                </div>
+
+                <div class="vault-meta">
+                    <p><i class="fa-solid fa-shield-halved"></i> 256-bit Encryption Active</p>
+                    <p><i class="fa-solid fa-circle-check"></i> Best Price Database Verified</p>
+                </div>
+
+                <button type="submit" class="btn-authorize">AUTHORIZE & EXECUTE</button>
+            </form>
+        </aside>
+    </div>
+
+</body>
+</html>

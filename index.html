@@ -3,109 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVERWARD TOURS | Global Citizen Logistics</title>
+    <title>EVERWARD TOURS | Private Logistics & Elite Travel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="prestige-theme">
 
-    <header class="navbar">
-        <div class="container">
-            <div class="brand-block">
+    <header class="main-header">
+        <div class="header-container">
+            <div class="brand-side">
                 <div class="unbroken-compass"></div>
                 <div class="logo">EVERWARD<span>TOURS</span></div>
+                <div class="market-ticker">
+                    <span class="ticker-item"><i class="fa-solid fa-plane"></i> FLIGHTS: LOWEST</span>
+                    <span class="ticker-item"><i class="fa-solid fa-car"></i> FLEET: READY</span>
+                </div>
             </div>
-            <nav class="nav-links">
-                <a href="#stays" class="active">Stays</a>
-                <a href="#aviation">Aviation</a>
-                <a href="#fleet">Fleet</a>
-                <a href="#risk">Risk Analysis</a>
-            </nav>
-            <div class="auth-zone">
-                <button class="btn-ghost" onclick="toggleAuth('register')">Membership</button>
-                <button class="btn-gold" onclick="toggleAuth('login')">Sign In</button>
+            
+            <div class="user-side">
+                <nav class="main-nav">
+                    <a href="#" class="nav-link">Blueprints</a>
+                    <a href="#" class="nav-link">Safe Zones</a>
+                </nav>
+                <div class="auth-cluster">
+                    <button class="btn-minimal" onclick="openAuth('register')">Register</button>
+                    <button class="btn-prestige" onclick="openAuth('login')">Log In</button>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="hero-sector">
-        <div class="hero-video-bg">
-            <div class="overlay-gradient"></div>
-            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1920" alt="Arizona Blueprint" class="main-hero-img">
-        </div>
+    <section class="hero-logistics">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="pre-title">GLOBAL CITIZEN JOE LLC // SECTOR LOGISTICS</div>
+            <h1>PRESTIGE IN MOTION</h1>
+            <p>Unified transport database: Air, Rail, and Private Fleet at the world's lowest negotiated rates.</p>
 
-        <div class="hero-container">
-            <div class="blueprint-meta">
-                <span class="sector-code">SECTOR: ARIZONA // 001</span>
-                <h1 class="glitch-title">CASA ARIZONA</h1>
-                <p class="hero-sub">Secure Logistics & Luxury Integration for the Global Citizen.</p>
-            </div>
-
-            <div class="search-engine-shield">
-                <div class="mode-selector">
-                    <button class="mode-tab active"><i class="fa-solid fa-person-walking"></i> Pedestrian</button>
-                    <button class="mode-tab"><i class="fa-solid fa-plane"></i> Aviation</button>
-                    <button class="mode-tab"><i class="fa-solid fa-car-side"></i> Fleet</button>
+            <div class="unified-search-box">
+                <div class="search-tabs">
+                    <button class="search-tab active" onclick="setMode('all')"><i class="fa-solid fa-layer-group"></i> All-In-One</button>
+                    <button class="search-tab" onclick="setMode('aviation')"><i class="fa-solid fa-plane-up"></i> Aviation</button>
+                    <button class="search-tab" onclick="setMode('fleet')"><i class="fa-solid fa-car-side"></i> Fleet</button>
+                    <button class="search-tab" onclick="setMode('rail')"><i class="fa-solid fa-train"></i> Rail</button>
                 </div>
-                <form class="search-logic">
-                    <div class="input-wrap">
-                        <label>Target Location</label>
-                        <input type="text" placeholder="Confirm Destination">
+
+                <form class="search-engine-form">
+                    <div class="input-set">
+                        <label>Origin</label>
+                        <input type="text" placeholder="Current Location">
                     </div>
-                    <div class="input-wrap border-left">
-                        <label>Timeline</label>
-                        <input type="text" placeholder="Check Availability">
+                    <div class="input-set border-left">
+                        <label>Target Destination</label>
+                        <input type="text" placeholder="Where to, Citizen?">
                     </div>
-                    <button type="submit" class="btn-execute">EXECUTE BOOKING</button>
+                    <div class="input-set border-left">
+                        <label>Logistics Timeline</label>
+                        <input type="text" placeholder="Select Dates">
+                    </div>
+                    <button type="submit" class="execute-search-btn">
+                        <span>SEARCH RATES</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </form>
-                <div class="system-status"><span class="pulse"></span> Active Users Tracking this Blueprint: 04</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="visual-recon">
-        <div class="container">
-            <div class="gallery-layout">
-                <div class="photo-large">
-                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1200" alt="Exterior">
-                    <div class="label">Exterior Perimeter</div>
-                </div>
-                <div class="photo-side">
-                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=600" alt="View">
-                    <div class="label">Deck Vantage</div>
-                </div>
-                <div class="photo-side">
-                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=600" alt="Interior">
-                    <div class="label">Secure Suite</div>
+                <div class="database-status">
+                    <i class="fa-solid fa-database"></i> Connected to Global Reservation Network // <span class="gold-text">BEST PRICES GUARANTEED</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="authModal" class="modal-overlay">
-        <div class="modal-card">
-            <span class="close-modal" onclick="toggleAuth()">&times;</span>
-            <div class="modal-header">
-                <h2 id="modalTitle">Member Access</h2>
-                <p>Initialize your Global Citizen credentials.</p>
-            </div>
-            <div class="modal-inputs">
-                <input type="email" placeholder="Corporate Email">
-                <input type="password" placeholder="Access Key">
-                <button class="btn-gold-fill">INITIALIZE SESSION</button>
-            </div>
+    <div id="authModal" class="modal-backdrop">
+        <div class="modal-glass-card">
+            <button class="close-modal" onclick="closeAuth()">&times;</button>
+            <div id="auth-content">
+                </div>
         </div>
     </div>
-
-    <script>
-        function toggleAuth(type) {
-            const modal = document.getElementById('authModal');
-            if(!type) { modal.style.display = 'none'; return; }
-            modal.style.display = 'flex';
-            document.getElementById('modalTitle').innerText = type === 'login' ? 'Member Access' : 'Create Legacy';
-        }
-    </script>
 
 </body>
 </html>

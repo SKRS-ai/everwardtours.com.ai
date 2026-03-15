@@ -3,84 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVERWARD TOURS | Private Logistics & Elite Travel</title>
+    <title>EVERWARD TOURS | Global Logistics Command</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="prestige-theme">
+<body class="command-theme">
 
-    <header class="main-header">
+    <header class="header-main">
         <div class="header-container">
-            <div class="brand-side">
+            <div class="brand-unit">
                 <div class="unbroken-compass"></div>
                 <div class="logo">EVERWARD<span>TOURS</span></div>
-                <div class="market-ticker">
-                    <span class="ticker-item"><i class="fa-solid fa-plane"></i> FLIGHTS: LOWEST</span>
-                    <span class="ticker-item"><i class="fa-solid fa-car"></i> FLEET: READY</span>
-                </div>
             </div>
-            
-            <div class="user-side">
-                <nav class="main-nav">
-                    <a href="#" class="nav-link">Blueprints</a>
-                    <a href="#" class="nav-link">Safe Zones</a>
-                </nav>
-                <div class="auth-cluster">
-                    <button class="btn-minimal" onclick="openAuth('register')">Register</button>
-                    <button class="btn-prestige" onclick="openAuth('login')">Log In</button>
-                </div>
+
+            <nav class="logistics-nav">
+                <a href="#stays"><i class="fa-solid fa-bed"></i> STAYS</a>
+                <a href="#aviation"><i class="fa-solid fa-plane"></i> AVIATION</a>
+                <a href="#fleet"><i class="fa-solid fa-car"></i> FLEET</a>
+                <a href="#rail"><i class="fa-solid fa-train"></i> RAIL</a>
+            </nav>
+
+            <div class="access-unit">
+                <button class="btn-minimal" onclick="openAuth('register')">Register</button>
+                <button class="btn-gold" onclick="openAuth('login')">Sign In</button>
             </div>
         </div>
     </header>
 
-    <section class="hero-logistics">
-        <div class="hero-overlay"></div>
+    <section class="hero-command">
+        <div class="hero-bg-overlay"></div>
         <div class="hero-content">
-            <div class="pre-title">GLOBAL CITIZEN JOE LLC // SECTOR LOGISTICS</div>
-            <h1>PRESTIGE IN MOTION</h1>
-            <p>Unified transport database: Air, Rail, and Private Fleet at the world's lowest negotiated rates.</p>
+            <div class="intel-tag">GLOBAL CITIZEN JOE LLC // SECTOR LOGISTICS 001</div>
+            <h1>GUIDING THE WAY.</h1>
+            <p>Direct access to the global travel network. Secure reservations. Negotiated elite rates.</p>
 
-            <div class="unified-search-box">
-                <div class="search-tabs">
-                    <button class="search-tab active" onclick="setMode('all')"><i class="fa-solid fa-layer-group"></i> All-In-One</button>
-                    <button class="search-tab" onclick="setMode('aviation')"><i class="fa-solid fa-plane-up"></i> Aviation</button>
-                    <button class="search-tab" onclick="setMode('fleet')"><i class="fa-solid fa-car-side"></i> Fleet</button>
-                    <button class="search-tab" onclick="setMode('rail')"><i class="fa-solid fa-train"></i> Rail</button>
+            <div class="unified-engine">
+                <div class="engine-header">
+                    <span><i class="fa-solid fa-network-wired"></i> Unified Database Connection: <strong>ACTIVE</strong></span>
+                    <span class="price-guarantee">Lowest Rates Guaranteed</span>
                 </div>
-
-                <form class="search-engine-form">
-                    <div class="input-set">
+                
+                <form class="search-grid">
+                    <div class="input-block">
                         <label>Origin</label>
                         <input type="text" placeholder="Current Location">
                     </div>
-                    <div class="input-set border-left">
+                    <div class="input-block b-left">
                         <label>Target Destination</label>
-                        <input type="text" placeholder="Where to, Citizen?">
+                        <input type="text" placeholder="Where to next, Citizen?">
                     </div>
-                    <div class="input-set border-left">
-                        <label>Logistics Timeline</label>
+                    <div class="input-block b-left">
+                        <label>Timeline</label>
                         <input type="text" placeholder="Select Dates">
                     </div>
-                    <button type="submit" class="execute-search-btn">
-                        <span>SEARCH RATES</span>
-                        <i class="fa-solid fa-chevron-right"></i>
+                    <button type="submit" class="btn-execute">
+                        EXECUTE SEARCH <i class="fa-solid fa-arrow-right-long"></i>
                     </button>
                 </form>
-                <div class="database-status">
-                    <i class="fa-solid fa-database"></i> Connected to Global Reservation Network // <span class="gold-text">BEST PRICES GUARANTEED</span>
+
+                <div class="engine-footer">
+                    <span><i class="fa-solid fa-bolt"></i> Real-time sync with Everward.app Logistics</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="authModal" class="modal-backdrop">
-        <div class="modal-glass-card">
-            <button class="close-modal" onclick="closeAuth()">&times;</button>
-            <div id="auth-content">
+    <section class="recon-grid">
+        <div class="container">
+            <div class="grid-header">
+                <h2>Strategic Blueprints</h2>
+                <p>Curated destinations with pre-verified security and luxury logistics.</p>
+            </div>
+            <div class="visual-stack">
+                <div class="recon-card large" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200');">
+                    <div class="card-meta">
+                        <h3>CASA ARIZONA</h3>
+                        <span>Sedona // Sector 7</span>
+                    </div>
                 </div>
+                <div class="recon-card" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600');">
+                    <div class="card-meta">
+                        <h3>SHINJUKU PULSE</h3>
+                        <span>Tokyo // Sector 3</span>
+                    </div>
+                </div>
+                <div class="recon-card" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=600');">
+                    <div class="card-meta">
+                        <h3>EMIRATE CORE</h3>
+                        <span>Dubai // Sector 1</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
 </body>
 </html>

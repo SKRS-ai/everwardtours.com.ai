@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECURITY VAULT | Everward Global Logistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #F8FAFC !important;">
+
+    <div class="dashboard-wrapper">
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-brand"><div class="logo">EVR<span>TR</span></div></div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html"><i class="fa-solid fa-gauge-high"></i> Overview</a>
+                <a href="profile.html"><i class="fa-solid fa-user-shield"></i> Identity Vault</a>
+                <a href="#" class="active"><i class="fa-solid fa-key"></i> Security Settings</a>
+                <a href="legal.html"><i class="fa-solid fa-file-contract"></i> Governance</a>
+                <a href="support.html"><i class="fa-solid fa-headset"></i> Support Desk</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <header class="content-header">
+                <div class="welcome">
+                    <h2>Security & Privacy Vault</h2>
+                    <p>End-to-end encryption protocols managed from Philadelphia HQ.</p>
+                </div>
+                <div class="security-status">
+                    <span class="status-indicator"><i class="fa-solid fa-shield-check"></i> ENCRYPTION ACTIVE</span>
+                </div>
+            </header>
+
+            <div class="security-grid">
+                
+                <div class="security-card">
+                    <h3><i class="fa-solid fa-fingerprint"></i> Authentication Protocols</h3>
+                    <div class="setting-item">
+                        <div class="setting-text">
+                            <strong>Biometric Access</strong>
+                            <span>Use FaceID or TouchID for mobile authorization.</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-text">
+                            <strong>Two-Factor (2FA)</strong>
+                            <span>Secure SMS or Authenticator App verification.</span>
+                        </div>
+                        <button class="btn-sm-action">Configure</button>
+                    </div>
+                </div>
+
+                <div class="security-card">
+                    <h3><i class="fa-solid fa-vault"></i> Encryption Keys</h3>
+                    <p class="card-desc">Your mission data is encrypted using 256-bit AES protocols. You hold the master key.</p>
+                    <div class="key-display">
+                        <code>SHA-256: 4e9a...f281</code>
+                        <button class="btn-copy">Rotate Key</button>
+                    </div>
+                </div>
+
+                <div class="security-card full-width">
+                    <h3><i class="fa-solid fa-list-check"></i> Mission Access Logs</h3>
+                    <table class="logs-table">
+                        <thead>
+                            <tr>
+                                <th>Timestamp (EST)</th>
+                                <th>Device / IP</th>
+                                <th>Sector Access</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mar 16, 03:42</td>
+                                <td>MacBook Pro (192.168.1.1)</td>
+                                <td>Philadelphia HQ</td>
+                                <td class="log-success">Authorized</td>
+                            </tr>
+                            <tr>
+                                <td>Mar 15, 22:15</td>
+                                <td>iPhone 15 Pro (Cellular)</td>
+                                <td>Sedona Sector</td>
+                                <td class="log-success">Authorized</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn-terminate">Terminate All Other Sessions</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

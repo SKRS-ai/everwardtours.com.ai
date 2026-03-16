@@ -252,3 +252,47 @@ body {
     cursor: pointer;
     border-radius: 4px;
 }
+
+/* Fleet Command Engineering */
+.fleet-hero {
+    background: var(--navy-command);
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+.fleet-hero h1 { font-family: 'Syncopate'; font-size: 32px; margin-top: 15px; }
+
+.fleet-controls { margin: 40px 0; text-align: center; }
+.btn-filter {
+    background: transparent;
+    border: 1px solid var(--border-light);
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-filter.active, .btn-filter:hover { background: var(--gold-elite); border-color: var(--gold-elite); color: #fff; }
+
+.vehicle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 100px; }
+
+.vehicle-card { background: #fff; border: 1px solid var(--border-light); border-radius: 8px; overflow: hidden; }
+.veh-img { height: 250px; background-size: cover; background-position: center; position: relative; }
+.security-level { position: absolute; top: 20px; left: 20px; background: var(--gold-elite); color: #fff; font-size: 9px; font-weight: 800; padding: 5px 12px; border-radius: 4px; }
+
+.veh-content { padding: 30px; }
+.veh-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.veh-header h3 { font-family: 'Syncopate'; font-size: 16px; }
+.pax-tag { font-size: 12px; color: var(--slate-text); }
+
+.veh-specs { list-style: none; margin-bottom: 30px; }
+.veh-specs li { font-size: 13px; color: var(--slate-text); margin-bottom: 8px; }
+.veh-specs i { color: var(--gold-elite); margin-right: 10px; }
+
+.veh-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #F1F5F9; padding-top: 20px; }
+.veh-price label { display: block; font-size: 9px; font-weight: 800; color: #94A3B8; text-transform: uppercase; }
+.veh-price strong { font-family: 'Syncopate'; font-size: 20px; color: var(--navy-command); }
+
+.btn-reserve { background: var(--navy-command); color: #fff; border: none; padding: 12px 20px; font-family: 'Syncopate'; font-size: 10px; font-weight: 700; cursor: pointer; border-radius: 4px; }

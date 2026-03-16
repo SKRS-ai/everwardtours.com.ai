@@ -456,3 +456,42 @@ body {
 .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
 input:checked + .slider { background-color: var(--gold-elite); }
 input:checked + .slider:before { transform: translateX(20px); }
+
+/* Partner Extranet Engineering */
+.extranet-wrapper { display: flex; height: 100vh; overflow: hidden; }
+
+.extranet-sidebar { width: 280px; background: #020617; border-right: 1px solid rgba(255,255,255,0.05); padding: 40px 20px; display: flex; flex-direction: column; }
+.extranet-sidebar .sidebar-brand { font-family: 'Syncopate'; font-size: 14px; margin-bottom: 50px; color: var(--gold-elite); }
+.extranet-sidebar .sidebar-brand span { color: #fff; opacity: 0.6; }
+
+.extranet-nav a { display: block; padding: 15px; color: #94A3B8; text-decoration: none; font-size: 13px; font-weight: 600; margin-bottom: 5px; border-radius: 4px; transition: 0.3s; }
+.extranet-nav a i { margin-right: 12px; width: 20px; text-align: center; }
+.extranet-nav a.active, .extranet-nav a:hover { background: rgba(212, 175, 55, 0.1); color: var(--gold-elite); }
+
+.extranet-content { flex: 1; padding: 60px; overflow-y: auto; }
+.extranet-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 50px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 30px; }
+.partner-welcome h1 { font-family: 'Syncopate'; font-size: 24px; margin-bottom: 8px; }
+.partner-welcome p { font-size: 14px; color: #94A3B8; }
+
+.yield-stats { display: flex; gap: 40px; }
+.stat-box label { display: block; font-size: 10px; color: var(--gold-elite); text-transform: uppercase; margin-bottom: 5px; }
+.stat-box strong { font-family: 'Syncopate'; font-size: 24px; }
+
+.extranet-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; }
+.e-card { background: #1E293B; border-radius: 8px; padding: 30px; border: 1px solid rgba(255,255,255,0.05); }
+.e-card h3 { font-family: 'Syncopate'; font-size: 12px; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+.e-card h3 i { color: var(--gold-elite); }
+
+.deployment-list { margin-top: 20px; }
+.dep-item { display: flex; justify-content: space-between; align-items: center; padding: 15px; background: rgba(255,255,255,0.02); border-radius: 4px; margin-bottom: 10px; }
+.dep-meta strong { display: block; font-size: 14px; margin-bottom: 4px; }
+.dep-meta span { font-size: 12px; color: #94A3B8; }
+
+.status-badge { font-size: 10px; font-weight: 800; padding: 4px 10px; border-radius: 50px; }
+.status-badge.green { background: rgba(16, 185, 129, 0.1); color: #10B981; }
+.status-badge.gold { background: rgba(212, 175, 55, 0.1); color: var(--gold-elite); }
+
+.toggle-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.toggle-row span { font-size: 13px; font-weight: 600; }
+
+.btn-update-asset { width: 100%; background: var(--gold-elite); color: #fff; border: none; padding: 15px; font-family: 'Syncopate'; font-size: 11px; font-weight: 700; cursor: pointer; border-radius: 4px; margin-top: 10px; }

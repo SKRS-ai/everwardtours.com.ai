@@ -120,3 +120,34 @@ body {
 .support-footer { margin-top: 40px; padding: 25px; background: #FFFDF5; border-radius: 8px; text-align: center; }
 .support-footer p { font-size: 13px; color: var(--slate-text); margin-bottom: 5px; }
 .support-footer strong { font-family: 'Syncopate'; color: var(--navy-command); font-size: 18px; }
+/* Profile & Vault Engineering */
+.profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
+.profile-card { background: #fff; border: 1px solid var(--border-light); padding: 30px; border-radius: 8px; }
+.profile-card.full-width { grid-column: span 2; }
+
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; border-bottom: 1px solid #F1F5F9; padding-bottom: 15px; }
+.card-header h3 { font-family: 'Syncopate'; font-size: 11px; letter-spacing: 1px; color: var(--navy-command); }
+.card-header h3 i { color: var(--gold-elite); margin-right: 10px; }
+
+.btn-edit, .btn-add-credential { background: transparent; border: 1px solid var(--border-light); color: var(--slate-text); padding: 6px 12px; border-radius: 4px; font-size: 11px; font-weight: 700; cursor: pointer; transition: 0.3s; }
+.btn-edit:hover, .btn-add-credential:hover { border-color: var(--gold-elite); color: var(--gold-elite); }
+
+.profile-info-row { display: flex; gap: 40px; margin-bottom: 20px; }
+.info-item { flex: 1; }
+.info-item label { display: block; font-size: 10px; font-weight: 800; color: #94A3B8; text-transform: uppercase; margin-bottom: 5px; }
+.info-item span { font-size: 15px; font-weight: 600; color: var(--navy-command); }
+
+/* Document List */
+.doc-item { display: flex; align-items: center; gap: 20px; padding: 15px; background: var(--titanium); border-radius: 6px; margin-bottom: 10px; }
+.doc-item i { font-size: 20px; color: var(--navy-command); }
+.doc-meta { flex-grow: 1; }
+.doc-meta strong { display: block; font-size: 13px; }
+.doc-meta span { font-size: 11px; color: var(--slate-text); }
+.status-verified { font-size: 9px; font-weight: 800; color: var(--success-green); text-transform: uppercase; border: 1px solid var(--success-green); padding: 2px 8px; border-radius: 50px; }
+
+/* Preferences Grid */
+.pref-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.pref-toggle label { display: block; font-family: 'Syncopate'; font-size: 9px; color: var(--gold-elite); margin-bottom: 8px; }
+.pref-toggle p { font-size: 13px; color: var(--slate-text); line-height: 1.5; }
+
+.badge-gold { background: var(--gold-elite); color: #fff; padding: 5px 15px; border-radius: 4px; font-family: 'Syncopate'; font-size: 10px; font-weight: 800; }

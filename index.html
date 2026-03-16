@@ -3,59 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVERWARD | Global Citizen Logistics</title>
+    <title>EVERWARD | Global Travel & Logistics Command</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="cinematic-theme">
+<body class="booking-elite-format">
 
-    <nav class="nav-overlay">
-        <div class="container nav-split">
-            <div class="brand">
-                <div class="logo-v1">EVER<span>WARD</span></div>
-                <span class="location-tag">PHL // HQ</span>
+    <nav class="top-utility">
+        <div class="container flex-between">
+            <div class="hq-intel">
+                <span><i class="fa-solid fa-location-dot"></i> HQ: PHILADELPHIA, PA</span>
+                <span class="status-dot"></span> LIVE OPS
             </div>
-            <div class="nav-links-v1">
-                <a href="discover.html">Sectors</a>
-                <a href="aviation.html">Aviation</a>
-                <a href="governance.html">Protocol</a>
-                <a href="dashboard.html" class="vault-access"><i class="fa-solid fa-key"></i> Vault</a>
+            <div class="utility-links">
+                <a href="guide.html">Travel Guide</a>
+                <a href="concierge.html">Concierge Desk</a>
+                <a href="register.html" class="highlight">Become a Citizen</a>
+                <a href="profile.html"><i class="fa-solid fa-user-shield"></i> Vault Login</a>
             </div>
         </div>
     </nav>
 
-    <header class="master-hero">
-        <div class="hero-bg-media">
-            <div class="scrim"></div>
+    <header class="main-header">
+        <div class="container flex-between">
+            <a href="index.html" class="logo">EVER<span>WARD</span></a>
+            <nav class="category-nav">
+                <a href="index.html" class="active"><i class="fa-solid fa-bed"></i> Stays</a>
+                <a href="aviation.html"><i class="fa-solid fa-plane-up"></i> Aviation</a>
+                <a href="fleet.html"><i class="fa-solid fa-car-side"></i> Ground Fleet</a>
+                <a href="discover.html"><i class="fa-solid fa-map-location-dot"></i> Sectors</a>
+            </nav>
+            <div class="partner-cta">
+                <a href="partners.html">List Your Asset</a>
+            </div>
         </div>
+    </header>
 
-        <div class="hero-v1-content">
-            <div class="intel-line">GLOBAL CITIZEN JOE LLC // MISSION READY</div>
-            <h1 class="glitch-text">Travel <br>Unrestricted.</h1>
-            <p class="hero-subtitle">Vetted sectors. Private assets. Absolute security.</p>
+    <section class="search-hero">
+        <div class="container">
+            <h1>Secure Your Next Mission.</h1>
+            <p>Vetted properties and private logistics for the modern Global Citizen.</p>
 
-            <div class="portal-search">
-                <form action="results.html" class="portal-form">
-                    <div class="portal-group">
-                        <label>Target Sector</label>
-                        <input type="text" placeholder="Enter Destination...">
+            <div class="search-console">
+                <form action="results.html" class="console-form">
+                    <div class="input-block">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <input type="text" placeholder="Where are you deploying? (e.g. Sedona)">
                     </div>
-                    <div class="portal-group">
-                        <label>Deployment</label>
-                        <input type="text" placeholder="Check-in / Check-out">
+                    <div class="input-block">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="text" placeholder="Check-in — Check-out">
                     </div>
-                    <button type="submit" class="btn-portal-go">EXECUTE <i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="input-block">
+                        <i class="fa-solid fa-user-group"></i>
+                        <input type="text" placeholder="Personnel / 1 Room">
+                    </div>
+                    <button type="submit" class="btn-search-execute">SEARCH</button>
                 </form>
             </div>
         </div>
-        
-        <div class="status-footer">
-            <div class="status-item"><span>Status:</span> <strong class="green-glow">Operational</strong></div>
-            <div class="status-item"><span>Active Assets:</span> <strong>4,200+</strong></div>
-            <div class="status-item"><span>Network:</span> <strong>Encrypted</strong></div>
+    </section>
+
+    <footer class="global-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-info">
+                <div class="logo">EVER<span>WARD</span></div>
+                <p>Strategic Travel Operations.<br>Global Citizen Joe LLC.</p>
+                <a href="about.html">Our Mission</a>
+            </div>
+            <div class="footer-col">
+                <h4>Sectors & Assets</h4>
+                <a href="sectors.html">All Sectors</a>
+                <a href="aviation.html">Aviation Hangar</a>
+                <a href="fleet.html">Ground Fleet</a>
+                <a href="asset.html">Asset Verification</a>
+            </div>
+            <div class="footer-col">
+                <h4>Logistics</h4>
+                <a href="itinerary.html">My Itinerary</a>
+                <a href="checkout.html">Secure Checkout</a>
+                <a href="glossary.html">Logistics Codex</a>
+                <a href="guide.html">Field Guide</a>
+            </div>
+            <div class="footer-col">
+                <h4>Governance</h4>
+                <a href="legal.html">Terms of Service</a>
+                <a href="governance.html">Human Rights Protocol</a>
+                <a href="media.html">Press & Media</a>
+            </div>
+            <div class="footer-col">
+                <h4>Partners</h4>
+                <a href="partners.html">Partner Relations</a>
+                <a href="extranet.html">Partner Extranet</a>
+                <a href="README.md">Developer Docs</a>
+            </div>
         </div>
-    </header>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EVERWARD GLOBAL. PHILADELPHIA HQ OFFICE.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

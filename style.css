@@ -495,3 +495,49 @@ input:checked + .slider:before { transform: translateX(20px); }
 .toggle-row span { font-size: 13px; font-weight: 600; }
 
 .btn-update-asset { width: 100%; background: var(--gold-elite); color: #fff; border: none; padding: 15px; font-family: 'Syncopate'; font-size: 11px; font-weight: 700; cursor: pointer; border-radius: 4px; margin-top: 10px; }
+
+/* Glossary & Codex Engineering */
+.glossary-hero {
+    background: #fff;
+    border-bottom: 1px solid var(--border-light);
+    padding: 80px 0;
+    text-align: left;
+}
+.glossary-hero h1 { font-family: 'Syncopate'; font-size: 42px; color: var(--navy-command); margin: 15px 0; }
+
+.glossary-content { padding: 60px 0 120px 0; }
+.glossary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; }
+
+.glossary-category h2 { 
+    font-family: 'Syncopate'; 
+    font-size: 14px; 
+    color: var(--gold-elite); 
+    margin-bottom: 30px; 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+}
+
+.term-box { margin-bottom: 35px; }
+.term-box strong { 
+    display: block; 
+    font-size: 16px; 
+    color: var(--navy-command); 
+    margin-bottom: 10px; 
+    font-weight: 700;
+}
+.term-box p { 
+    font-size: 14px; 
+    color: var(--slate-text); 
+    line-height: 1.6; 
+}
+
+.codex-footer { 
+    margin-top: 100px; 
+    text-align: center; 
+    padding: 50px; 
+    background: var(--navy-command); 
+    border-radius: 8px; 
+    color: #fff; 
+}
+.codex-footer p { font-size: 16px; margin-bottom: 25px; opacity: 0.8; }

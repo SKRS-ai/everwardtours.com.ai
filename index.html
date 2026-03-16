@@ -3,87 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVERWARD TOURS | Global Elite Logistics & Travel</title>
+    <title>EVERWARD | Global Logistics & Elite Travel</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #F8FAFC !important; color: #0F172A !important;">
+<body>
 
-    <div class="elite-status-bar">
-        <div class="container flex-between">
-            <div class="status-intel">
-                <span class="pulse"></span> <strong>SYSTEM STATUS:</strong> GLOBAL NETWORK ACTIVE
-            </div>
-            <div class="elite-contact">
-                <i class="fa-solid fa-crown"></i> ELITE MEMBER SUPPORT: 215-EVR-WARD
-            </div>
+    <div class="top-intel-bar">
+        <div class="container">
+            <span><i class="fa-solid fa-signal"></i> HQ STATUS: OPTIMAL</span>
+            <span><i class="fa-solid fa-earth-americas"></i> ACTIVE SECTORS: 14</span>
+            <span class="clock" id="phl-clock">PHL: 04:30 AM</span>
         </div>
     </div>
 
-    <header class="master-header">
-        <div class="container header-grid">
-            <div class="brand-block">
-                <div class="logo">EVERWARD<span>TOURS</span></div>
-                <p class="logo-sub">THE GLOBAL CITIZEN'S BLUEPRINT</p>
+    <nav class="main-nav">
+        <div class="container nav-flex">
+            <div class="logo">EVER<span>WARD</span></div>
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="discover.html">Sectors <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="results.html">North America (Sedona)</a>
+                        <a href="sectors.html">Global Safe Zones</a>
+                        <a href="discover.html">Tactical Map</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="aviation.html">Fleet <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="aviation.html">Private Hangar</a>
+                        <a href="fleet.html">Ground Operations</a>
+                    </div>
+                </div>
+                <a href="governance.html">Protocol</a>
+                <a href="media.html">Intelligence</a>
             </div>
-
-            <nav class="sector-nav">
-                <a href="#" class="active"><i class="fa-solid fa-hotel"></i> Stays</a>
-                <a href="#"><i class="fa-solid fa-plane-up"></i> Aviation</a>
-                <a href="#"><i class="fa-solid fa-car-side"></i> Fleet</a>
-                <a href="#"><i class="fa-solid fa-ship"></i> Maritime</a>
-            </nav>
-
-            <div class="auth-gate">
-                <button class="btn-register" onclick="toggleAuth('reg')">Open Account</button>
-                <button class="btn-login" onclick="toggleAuth('log')">Sign In</button>
+            <div class="nav-auth">
+                <a href="registration.html" class="btn-login">Citizen Login</a>
+                <a href="dashboard.html" class="btn-vault"><i class="fa-solid fa-vault"></i> MY VAULT</a>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <section class="hero-recon">
-        <div class="hero-content">
-            <span class="intel-label">STRATEGIC TRAVEL GUIDANCE</span>
-            <h1>Guiding the Elite Traveler.</h1>
-            <p>Direct integration into global logistics. One dashboard. Best negotiated rates on earth.</p>
-
-            <div class="search-hub">
-                <div class="hub-tabs">
-                    <button class="hub-tab active">Unified Logistics</button>
-                    <button class="hub-tab">Private Charter</button>
-                    <button class="hub-tab">Secure Stays</button>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge-gold">PHILADELPHIA HQ // GLOBAL DEPLOYMENT</span>
+            <h1>Logistics for the <br>Global Citizen.</h1>
+            <p>End-to-end travel engineering. We secure the assets, you execute the mission.</p>
+            
+            <div class="search-engine-box">
+                <div class="search-tabs">
+                    <button class="s-tab active"><i class="fa-solid fa-building"></i> Stays</button>
+                    <button class="s-tab"><i class="fa-solid fa-plane"></i> Aviation</button>
+                    <button class="s-tab"><i class="fa-solid fa-car"></i> Fleet</button>
                 </div>
-                <form class="hub-form">
-                    <div class="hub-field">
-                        <label>Sector/Destination</label>
-                        <input type="text" placeholder="Where are we guiding you?">
+                <form class="search-form" action="results.html">
+                    <div class="input-group">
+                        <label>Target Sector</label>
+                        <input type="text" placeholder="e.g. Sedona, AZ">
                     </div>
-                    <div class="hub-field border-left">
-                        <label>Mission Dates</label>
-                        <input type="text" placeholder="Check Availability">
+                    <div class="input-group">
+                        <label>Deployment Window</label>
+                        <input type="text" placeholder="Select Dates">
                     </div>
-                    <div class="hub-field border-left">
+                    <div class="input-group">
                         <label>Personnel</label>
-                        <input type="text" placeholder="1 Elite, 0 Guests">
+                        <input type="number" placeholder="1">
                     </div>
                     <button type="submit" class="btn-execute">INITIALIZE SEARCH</button>
                 </form>
             </div>
         </div>
+    </header>
+
+    <section class="quick-access container">
+        <a href="aviation.html" class="access-card">
+            <i class="fa-solid fa-jet-fighter"></i>
+            <h3>Private Hangar</h3>
+            <p>Compare light to heavy jet assets.</p>
+        </a>
+        <a href="fleet.html" class="access-card">
+            <i class="fa-solid fa-shield-car"></i>
+            <h3>Ground Ops</h3>
+            <p>Secure executive transport.</p>
+        </a>
+        <a href="concierge.html" class="access-card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>HQ Support</h3>
+            <p>Direct link to PHL Desk.</p>
+        </a>
+        <a href="extranet.html" class="access-card">
+            <i class="fa-solid fa-handshake"></i>
+            <h3>Partners</h3>
+            <p>Asset management portal.</p>
+        </a>
     </section>
 
-    <section class="advertisement-block container">
-        <div class="ad-card">
-            <div class="ad-text">
-                <span class="ad-tag">OFFICIAL PARTNER</span>
-                <h3>Global Citizen Elite Rewards</h3>
-                <p>Unlock 20% commission-back on all Casa Arizona blueprints this quarter.</p>
-                <button class="btn-ad">View Exclusive Offers</button>
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">EVER<span>WARD</span></div>
+                <p>Global Citizen Joe LLC.<br>Philadelphia, PA</p>
             </div>
-            <div class="ad-visual" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=400');"></div>
+            <div class="footer-col">
+                <h4>Sectors</h4>
+                <a href="results.html">Sedona</a>
+                <a href="discover.html">Dubai</a>
+                <a href="sectors.html">All Safe Zones</a>
+            </div>
+            <div class="footer-col">
+                <h4>Governance</h4>
+                <a href="legal.html">Terms</a>
+                <a href="security.html">Privacy Vault</a>
+                <a href="governance.html">Human Rights</a>
+            </div>
+            <div class="footer-col">
+                <h4>Corporate</h4>
+                <a href="media.html">Newsroom</a>
+                <a href="media.html">Investors</a>
+                <a href="glossary.html">Logistics Codex</a>
+            </div>
         </div>
-    </section>
+    </footer>
 
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZone: 'America/New_York' });
+            document.getElementById('phl-clock').innerText = `PHL: ${timeStr} EST`;
+        }
+        setInterval(updateClock, 60000);
+    </script>
 </body>
 </html>

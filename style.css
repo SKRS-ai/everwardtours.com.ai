@@ -81,3 +81,42 @@ body {
 
 .footer-bottom { border-top: 1px solid var(--border-light); padding-top: 40px; display: flex; justify-content: space-between; align-items: center; }
 .footer-brand p { font-size: 11px; color: #94A3B8; letter-spacing: 1px; text-transform: uppercase; margin-top: 5px; }
+/* Success & Briefing Engineering */
+.success-wrapper { padding: 80px 0 120px 0; max-width: 1000px; }
+
+.success-banner { text-align: center; margin-bottom: 60px; }
+.status-badge { display: inline-block; background: var(--success-green); color: #fff; padding: 8px 20px; border-radius: 50px; font-weight: 800; font-size: 11px; letter-spacing: 1px; margin-bottom: 20px; }
+.success-banner h1 { font-family: 'Syncopate'; font-size: 42px; color: var(--navy-command); margin-bottom: 15px; }
+.success-banner p { color: var(--slate-text); font-size: 18px; max-width: 600px; margin: 0 auto; }
+
+.briefing-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; }
+
+/* Access Vault */
+.briefing-card { background: #fff; border: 1px solid var(--border-light); padding: 40px; border-radius: 8px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+.briefing-card h3 { font-family: 'Syncopate'; font-size: 12px; margin-bottom: 30px; letter-spacing: 1px; }
+
+.qr-placeholder { background: var(--titanium); border: 1px dashed var(--border-light); padding: 40px; border-radius: 8px; margin-bottom: 30px; display: flex; flex-direction: column; align-items: center; gap: 15px; }
+.qr-placeholder i { font-size: 80px; color: var(--navy-command); }
+.qr-placeholder span { font-size: 11px; font-weight: 700; color: var(--slate-text); text-transform: uppercase; }
+
+.id-row { display: flex; justify-content: space-between; padding: 15px 0; border-top: 1px solid #F1F5F9; font-size: 13px; }
+.id-row span { color: var(--slate-text); }
+.id-row strong { color: var(--navy-command); }
+
+.action-tray { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+.btn-print, .btn-calendar { background: #fff; border: 1px solid var(--navy-command); padding: 15px; font-weight: 700; font-size: 12px; cursor: pointer; border-radius: 4px; transition: 0.3s; }
+.btn-print:hover { background: var(--navy-command); color: #fff; }
+
+/* Protocol Timeline */
+.protocol-box { background: #fff; border: 1px solid var(--border-light); padding: 40px; border-radius: 8px; }
+.protocol-box h3 { font-family: 'Syncopate'; font-size: 14px; margin-bottom: 35px; }
+
+.timeline { position: relative; padding-left: 30px; border-left: 2px solid var(--gold-elite); }
+.time-point { position: relative; margin-bottom: 40px; }
+.time-point::before { content: ""; position: absolute; left: -37px; top: 0; width: 12px; height: 12px; background: var(--gold-elite); border: 3px solid #fff; border-radius: 50%; }
+.time-point strong { display: block; font-size: 16px; margin-bottom: 8px; color: var(--navy-command); }
+.time-point p { font-size: 14px; color: var(--slate-text); line-height: 1.6; }
+
+.support-footer { margin-top: 40px; padding: 25px; background: #FFFDF5; border-radius: 8px; text-align: center; }
+.support-footer p { font-size: 13px; color: var(--slate-text); margin-bottom: 5px; }
+.support-footer strong { font-family: 'Syncopate'; color: var(--navy-command); font-size: 18px; }

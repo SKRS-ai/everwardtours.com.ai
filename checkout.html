@@ -3,73 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Checkout | Everward Logistics</title>
+    <title>AUTHORIZATION VAULT | Everward Global Logistics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="command-theme">
+<body style="background-color: #F8FAFC !important;">
 
-    <div class="checkout-container">
-        <main class="logistics-summary">
+    <div class="checkout-container container">
+        <main class="checkout-main">
             <header class="checkout-header">
-                <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Return to Command</a>
-                <h1>Mission Blueprint: Sedona</h1>
+                <span class="secure-tag"><i class="fa-solid fa-lock"></i> SECURE ENCRYPTED TERMINAL</span>
+                <h1>Mission Authorization</h1>
             </header>
 
-            <div class="timeline-bridge">
-                <div class="bridge-segment">
-                    <div class="segment-icon"><i class="fa-solid fa-plane-departure"></i></div>
-                    <div class="segment-info">
-                        <h3>Aviation Sector</h3>
-                        <p>PHL → PHX // Executive Class</p>
-                        <span class="status-tag">Synced</span>
-                    </div>
-                </div>
-
-                <div class="bridge-segment active">
-                    <div class="segment-icon"><i class="fa-solid fa-car-side"></i></div>
-                    <div class="segment-info">
-                        <h3>Ground Fleet Integration</h3>
-                        <p>Private Pickup: PHX Sky Harbor</p>
-                        <span class="status-tag gold">Best Rate Locked</span>
-                    </div>
-                </div>
-
-                <div class="bridge-segment">
-                    <div class="segment-icon"><i class="fa-solid fa-house-shield"></i></div>
-                    <div class="segment-info">
-                        <h3>Secure Stay</h3>
-                        <p>Casa Arizona // Sedona Sector</p>
-                        <span class="status-tag">Pending Authorization</span>
+            <div class="checkout-section">
+                <div class="section-num">01</div>
+                <div class="section-body">
+                    <h3>Authorized Signatory</h3>
+                    <p>Details must match your legal identification for sector clearance.</p>
+                    <div class="input-grid">
+                        <div class="field">
+                            <label>Full Legal Name</label>
+                            <input type="text" placeholder="Johnathan Doe">
+                        </div>
+                        <div class="field">
+                            <label>Citizen ID</label>
+                            <input type="text" placeholder="GCJ-4402-ALPHA">
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="checkout-section">
+                <div class="section-num">02</div>
+                <div class="section-body">
+                    <h3>Funding Source</h3>
+                    <div class="payment-methods">
+                        <label class="pay-option active">
+                            <input type="radio" name="pay" checked>
+                            <span><i class="fa-solid fa-credit-card"></i> Corporate Card</span>
+                        </label>
+                        <label class="pay-option">
+                            <input type="radio" name="pay">
+                            <span><i class="fa-solid fa-building-columns"></i> Wire Transfer</span>
+                        </label>
+                    </div>
+                    
+                    <div class="card-details">
+                        <div class="field full">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="XXXX XXXX XXXX XXXX">
+                        </div>
+                        <div class="input-grid">
+                            <div class="field">
+                                <label>Expiry</label>
+                                <input type="text" placeholder="MM/YY">
+                            </div>
+                            <div class="field">
+                                <label>CVC/Security Key</label>
+                                <input type="text" placeholder="***">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-lock-blueprint">AUTHORIZE & LOCK RATE</button>
+            <p class="final-disclaimer">By clicking authorize, you agree to the logistics terms of Global Citizen Joe LLC. All funds are processed through our Philadelphia-based secure clearinghouse.</p>
         </main>
 
-        <aside class="payment-vault">
-            <div class="vault-header">
-                <h2>Total Logistics Investment</h2>
-                <p class="price-display">$3,240.00</p>
+        <aside class="checkout-sidebar">
+            <div class="blueprint-summary">
+                <h4>Active Blueprint Summary</h4>
+                <div class="summary-asset">
+                    <div class="asset-mini-img" style="background-image: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=150');"></div>
+                    <div class="asset-mini-text">
+                        <strong>Casa Arizona Grand Villa</strong>
+                        <span>Sedona Sector // 7 Nights</span>
+                    </div>
+                </div>
+
+                <div class="summary-breakdown">
+                    <div class="s-row"><span>Logistics Rate</span> <span>$10,150.00</span></div>
+                    <div class="s-row"><span>Elite Member Credit</span> <span class="gold-text">-$2,100.00</span></div>
+                    <div class="s-row"><span>Secure Processing</span> <span>$0.00</span></div>
+                    <hr>
+                    <div class="s-row total"><span>Total Funding</span> <span>$8,050.00</span></div>
+                </div>
+
+                <div class="security-guarantee">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <p><strong>Everward Guarantee:</strong> Your rate is locked. No hidden surcharges or mid-mission adjustments.</p>
+                </div>
             </div>
-
-            <form class="vault-form">
-                <label>Member Identity</label>
-                <input type="text" placeholder="Global Citizen Joe" disabled>
-                
-                <label>Secure Payment Method</label>
-                <div class="card-input">
-                    <i class="fa-solid fa-credit-card"></i>
-                    <input type="text" placeholder="XXXX XXXX XXXX 2026">
-                </div>
-
-                <div class="vault-meta">
-                    <p><i class="fa-solid fa-shield-halved"></i> 256-bit Encryption Active</p>
-                    <p><i class="fa-solid fa-circle-check"></i> Best Price Database Verified</p>
-                </div>
-
-                <button type="submit" class="btn-authorize">AUTHORIZE & EXECUTE</button>
-            </form>
         </aside>
     </div>
 

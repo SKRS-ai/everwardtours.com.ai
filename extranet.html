@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARTNER EXTRANET | Everward Asset Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #0F172A !important; color: #fff;">
+
+    <div class="extranet-wrapper">
+        <aside class="extranet-sidebar">
+            <div class="sidebar-brand">EVERWARD<span>PARTNER</span></div>
+            <nav class="extranet-nav">
+                <a href="#" class="active"><i class="fa-solid fa-chart-pie"></i> Fleet/Asset Health</a>
+                <a href="#"><i class="fa-solid fa-calendar-check"></i> Active Deployments</a>
+                <a href="#"><i class="fa-solid fa-vault"></i> Fiscal Settlements</a>
+                <a href="#"><i class="fa-solid fa-gears"></i> API Integration</a>
+            </nav>
+            <div class="sidebar-footer">
+                <span class="hq-link">Linked to PHL-HQ</span>
+            </div>
+        </aside>
+
+        <main class="extranet-content">
+            <header class="extranet-header">
+                <div class="partner-welcome">
+                    <h1>Asset Command: Sedona Sector</h1>
+                    <p>Managing: <strong>Casa Arizona Estate</strong> & <strong>Fleet 774-AZ</strong></p>
+                </div>
+                <div class="yield-stats">
+                    <div class="stat-box">
+                        <label>Asset Yield</label>
+                        <strong>88.4%</strong>
+                    </div>
+                    <div class="stat-box">
+                        <label>Pending Settlement</label>
+                        <strong>$42,150.00</strong>
+                    </div>
+                </div>
+            </header>
+
+            <div class="extranet-grid">
+                <div class="e-card">
+                    <div class="e-card-header">
+                        <h3><i class="fa-solid fa-clock-rotate-left"></i> Current Deployments</h3>
+                        <button class="btn-ghost">View All</button>
+                    </div>
+                    <div class="deployment-list">
+                        <div class="dep-item">
+                            <div class="dep-meta">
+                                <strong>Citizen J. Doe</strong>
+                                <span>Arrival: Mar 18 // Private Fleet Req.</span>
+                            </div>
+                            <span class="status-badge green">STAGED</span>
+                        </div>
+                        <div class="dep-item">
+                            <div class="dep-meta">
+                                <strong>Citizen A. Smith</strong>
+                                <span>Arrival: Mar 21 // Secure Perimeter</span>
+                            </div>
+                            <span class="status-badge gold">PENDING</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="e-card">
+                    <h3><i class="fa-solid fa-toggle-on"></i> Asset Availability</h3>
+                    <p class="card-hint">Toggle "Elite Mode" to offer exclusive rates to Global Citizen members during low-occupancy windows.</p>
+                    <div class="toggle-row">
+                        <span>Elite Negotiated Rates</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-row">
+                        <span>Automated Dispatch</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <button class="btn-update-asset">Update Inventory Protocol</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

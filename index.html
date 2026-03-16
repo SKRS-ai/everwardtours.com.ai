@@ -8,134 +8,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="command-center">
 
-    <div class="top-intel-bar">
-        <div class="container">
-            <span><i class="fa-solid fa-signal"></i> HQ STATUS: OPTIMAL</span>
-            <span><i class="fa-solid fa-earth-americas"></i> ACTIVE SECTORS: 14</span>
-            <span class="clock" id="phl-clock">PHL: 04:30 AM</span>
-        </div>
-    </div>
-
-    <nav class="main-nav">
+    <nav class="glass-nav">
         <div class="container nav-flex">
             <div class="logo">EVER<span>WARD</span></div>
             <div class="nav-links">
-                <div class="dropdown">
-                    <a href="discover.html">Sectors <i class="fa-solid fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="results.html">North America (Sedona)</a>
-                        <a href="sectors.html">Global Safe Zones</a>
-                        <a href="discover.html">Tactical Map</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="aviation.html">Fleet <i class="fa-solid fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="aviation.html">Private Hangar</a>
-                        <a href="fleet.html">Ground Operations</a>
-                    </div>
-                </div>
+                <a href="discover.html">Sectors</a>
+                <a href="aviation.html">Aviation</a>
+                <a href="fleet.html">Ground</a>
                 <a href="governance.html">Protocol</a>
-                <a href="media.html">Intelligence</a>
             </div>
             <div class="nav-auth">
-                <a href="registration.html" class="btn-login">Citizen Login</a>
-                <a href="dashboard.html" class="btn-vault"><i class="fa-solid fa-vault"></i> MY VAULT</a>
+                <a href="dashboard.html" class="btn-vault-link"><i class="fa-solid fa-lock"></i> IDENTITY VAULT</a>
             </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <span class="badge-gold">PHILADELPHIA HQ // GLOBAL DEPLOYMENT</span>
-            <h1>Logistics for the <br>Global Citizen.</h1>
-            <p>End-to-end travel engineering. We secure the assets, you execute the mission.</p>
-            
-            <div class="search-engine-box">
-                <div class="search-tabs">
-                    <button class="s-tab active"><i class="fa-solid fa-building"></i> Stays</button>
-                    <button class="s-tab"><i class="fa-solid fa-plane"></i> Aviation</button>
-                    <button class="s-tab"><i class="fa-solid fa-car"></i> Fleet</button>
-                </div>
-                <form class="search-form" action="results.html">
-                    <div class="input-group">
-                        <label>Target Sector</label>
-                        <input type="text" placeholder="e.g. Sedona, AZ">
+    <header class="hero-v2">
+        <div class="hero-video-bg">
+            <div class="overlay-dark"></div>
+        </div>
+        
+        <div class="container hero-core">
+            <div class="intel-badge">PHILADELPHIA HQ // STATUS: ACTIVE</div>
+            <h1>Travel <br><span class="gold-text">Engineered.</span></h1>
+            <p>Direct access to vetted global sectors, private aviation assets, and secure ground logistics.</p>
+
+            <div class="main-search-interface">
+                <form action="results.html" class="search-grid">
+                    <div class="search-input">
+                        <label>DESTINATION</label>
+                        <input type="text" placeholder="Enter Sector (e.g. Sedona)">
                     </div>
-                    <div class="input-group">
-                        <label>Deployment Window</label>
+                    <div class="search-input">
+                        <label>DEPLOYMENT</label>
                         <input type="text" placeholder="Select Dates">
                     </div>
-                    <div class="input-group">
-                        <label>Personnel</label>
-                        <input type="number" placeholder="1">
-                    </div>
-                    <button type="submit" class="btn-execute">INITIALIZE SEARCH</button>
+                    <button type="submit" class="btn-primary-execute">SEARCH ASSETS</button>
                 </form>
             </div>
         </div>
     </header>
 
-    <section class="quick-access container">
-        <a href="aviation.html" class="access-card">
-            <i class="fa-solid fa-jet-fighter"></i>
-            <h3>Private Hangar</h3>
-            <p>Compare light to heavy jet assets.</p>
-        </a>
-        <a href="fleet.html" class="access-card">
-            <i class="fa-solid fa-shield-car"></i>
-            <h3>Ground Ops</h3>
-            <p>Secure executive transport.</p>
-        </a>
-        <a href="concierge.html" class="access-card">
-            <i class="fa-solid fa-headset"></i>
-            <h3>HQ Support</h3>
-            <p>Direct link to PHL Desk.</p>
-        </a>
-        <a href="extranet.html" class="access-card">
-            <i class="fa-solid fa-handshake"></i>
-            <h3>Partners</h3>
-            <p>Asset management portal.</p>
-        </a>
-    </section>
-
-    <footer class="main-footer">
+    <section class="operational-footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <div class="logo">EVER<span>WARD</span></div>
-                <p>Global Citizen Joe LLC.<br>Philadelphia, PA</p>
+                <div class="logo-sm">EVER<span>WARD</span></div>
+                <p>&copy; 2026 Global Citizen Joe LLC.</p>
             </div>
-            <div class="footer-col">
-                <h4>Sectors</h4>
-                <a href="results.html">Sedona</a>
-                <a href="discover.html">Dubai</a>
-                <a href="sectors.html">All Safe Zones</a>
+            <div class="link-group">
+                <h4>Logistics</h4>
+                <a href="aviation.html">Hangar</a>
+                <a href="fleet.html">Fleet</a>
+                <a href="discover.html">Map</a>
             </div>
-            <div class="footer-col">
-                <h4>Governance</h4>
-                <a href="legal.html">Terms</a>
-                <a href="security.html">Privacy Vault</a>
+            <div class="link-group">
+                <h4>Security</h4>
+                <a href="security.html">Vault Settings</a>
+                <a href="legal.html">Governance</a>
                 <a href="governance.html">Human Rights</a>
             </div>
-            <div class="footer-col">
-                <h4>Corporate</h4>
+            <div class="link-group">
+                <h4>Support</h4>
+                <a href="concierge.html">HQ Desk</a>
+                <a href="glossary.html">Codex</a>
                 <a href="media.html">Newsroom</a>
-                <a href="media.html">Investors</a>
-                <a href="glossary.html">Logistics Codex</a>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <script>
-        function updateClock() {
-            const now = new Date();
-            const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZone: 'America/New_York' });
-            document.getElementById('phl-clock').innerText = `PHL: ${timeStr} EST`;
-        }
-        setInterval(updateClock, 60000);
-    </script>
 </body>
 </html>

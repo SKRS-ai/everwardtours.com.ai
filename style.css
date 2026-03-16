@@ -296,3 +296,90 @@ body {
 .veh-price strong { font-family: 'Syncopate'; font-size: 20px; color: var(--navy-command); }
 
 .btn-reserve { background: var(--navy-command); color: #fff; border: none; padding: 12px 20px; font-family: 'Syncopate'; font-size: 10px; font-weight: 700; cursor: pointer; border-radius: 4px; }
+
+/* Tactical Map Engineering */
+.map-interface {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+.map-header {
+    position: absolute;
+    top: 60px;
+    z-index: 10;
+    max-width: 500px;
+}
+.map-header h1 { font-family: 'Syncopate'; font-size: 36px; margin: 10px 0; }
+
+.tactical-map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.world-base {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    filter: grayscale(100%) brightness(0.5);
+}
+
+/* Pulsing Pins */
+.map-pin {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: var(--gold-elite);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pulse {
+    width: 100%;
+    height: 100%;
+    background: var(--gold-elite);
+    border-radius: 50%;
+    animation: pulse-ring 1.5s infinite;
+}
+
+@keyframes pulse-ring {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(4); opacity: 0; }
+}
+
+/* Pin Positions */
+.pin-philly { top: 38%; left: 28%; }
+.pin-sedona { top: 42%; left: 18%; }
+.pin-dubai { top: 52%; left: 62%; }
+.pin-london { top: 32%; left: 48%; }
+
+/* Sector Cards */
+.sector-directory { padding: 80px 0; }
+.directory-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+
+.sector-card {
+    background: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+.sector-card:hover { transform: translateY(-10px); border-color: var(--gold-elite); }
+.sector-image { height: 200px; background-size: cover; background-position: center; }
+
+.sector-info { padding: 25px; }
+.status-online { color: var(--success-green); font-size: 10px; font-weight: 800; display: block; margin-bottom: 10px; }
+.sector-info h3 { font-family: 'Syncopate'; font-size: 13px; margin-bottom: 5px; }
+.sector-info p { font-size: 13px; color: #94A3B8; margin-bottom: 20px; }
+
+.btn-sector {
+    text-decoration: none;
+    color: var(--gold-elite);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

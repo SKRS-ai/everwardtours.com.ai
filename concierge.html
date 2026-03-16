@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONCIERGE TERMINAL | Everward Global Logistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #F8FAFC !important;">
+
+    <div class="terminal-layout container">
+        <aside class="coordinator-sidebar">
+            <div class="sidebar-header">
+                <h3>HQ DESK // PHI</h3>
+                <span class="status-indicator">● LIVE</span>
+            </div>
+            
+            <div class="coordinator-card active">
+                <div class="coord-avatar" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150');"></div>
+                <div class="coord-info">
+                    <strong>Marcus V.</strong>
+                    <span>Lead Logistics Lead</span>
+                </div>
+            </div>
+
+            <div class="hq-briefing">
+                <h4>Sector Intel</h4>
+                <p><strong>Current Time:</strong> 15:42 EST</p>
+                <p><strong>Weather (Sedona):</strong> 72°F Clear</p>
+                <p><strong>Fleet Status:</strong> Optimal</p>
+            </div>
+        </aside>
+
+        <main class="chat-interface">
+            <header class="chat-header">
+                <div class="mission-status">
+                    <span class="label">SECURE CHANNEL 09</span>
+                    <h2>Active Concierge Link</h2>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-call"><i class="fa-solid fa-phone"></i> Voice Link</button>
+                </div>
+            </header>
+
+            <div class="message-vault">
+                <div class="msg system">
+                    <span>Terminal initialized. Your session is encrypted.</span>
+                </div>
+                
+                <div class="msg agent">
+                    <div class="bubble">
+                        Good afternoon, Johnathan. I see your mission to the Sedona Sector is approaching. Would you like me to pre-stage your ground fleet at the terminal or the villa?
+                    </div>
+                    <span class="msg-time">14:05</span>
+                </div>
+
+                <div class="msg user">
+                    <div class="bubble">
+                        Please stage the Escalade at the Private Aviation Terminal. I'll be arriving at 16:00.
+                    </div>
+                    <span class="msg-time">14:10</span>
+                </div>
+
+                <div class="msg agent">
+                    <div class="bubble">
+                        Understood. Fleet asset 774-AZ is locked for 16:00. Your digital key is being pushed to your vault now.
+                    </div>
+                    <span class="msg-time">14:12</span>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" placeholder="Initialize command or message...">
+                <button class="btn-send"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

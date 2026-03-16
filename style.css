@@ -597,3 +597,31 @@ input:checked + .slider:before { transform: translateX(20px); }
 
 .btn-enter-sector { display: block; text-align: center; background: transparent; border: 1px solid var(--gold-elite); color: var(--gold-elite); text-decoration: none; padding: 12px; font-family: 'Syncopate'; font-size: 10px; font-weight: 700; border-radius: 4px; transition: 0.3s; }
 .btn-enter-sector:hover { background: var(--gold-elite); color: #fff; }
+
+/* Ethical Governance Engineering */
+.gov-hero {
+    background: #fff;
+    padding: 100px 0;
+    border-bottom: 1px solid var(--border-light);
+    text-align: left;
+}
+.gov-hero h1 { font-family: 'Syncopate'; font-size: 36px; color: var(--navy-command); margin: 15px 0; }
+
+.gov-main { padding: 80px 0 120px 0; }
+.gov-grid { max-width: 900px; margin: 0 auto; }
+
+.gov-section { margin-bottom: 80px; }
+.gov-section h2 { font-family: 'Syncopate'; font-size: 14px; color: var(--gold-elite); margin-bottom: 25px; letter-spacing: 2px; }
+.gov-section p { font-size: 16px; color: var(--slate-text); line-height: 1.8; margin-bottom: 25px; }
+
+.audit-stats { display: flex; gap: 40px; background: var(--titanium); padding: 30px; border-radius: 8px; border: 1px solid var(--border-light); }
+.a-stat strong { display: block; font-size: 24px; color: var(--navy-command); font-family: 'Syncopate'; }
+.a-stat span { font-size: 11px; font-weight: 800; color: var(--slate-text); text-transform: uppercase; }
+
+.highlight-box { background: #fff; border-left: 4px solid var(--navy-command); padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+.gov-list { list-style: none; padding: 0; }
+.gov-list li { padding: 12px 0; border-bottom: 1px solid #F1F5F9; font-size: 14px; color: var(--slate-text); }
+.gov-list li::before { content: "•"; color: var(--gold-elite); font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+
+.btn-gov-report { display: inline-block; margin-top: 20px; font-weight: 700; font-size: 12px; color: var(--navy-command); text-decoration: none; border-bottom: 2px solid var(--gold-elite); padding-bottom: 5px; }

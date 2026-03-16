@@ -571,3 +571,29 @@ input:checked + .slider:before { transform: translateX(20px); }
 .resource-list a { display: block; text-decoration: none; color: var(--navy-command); font-size: 14px; font-weight: 600; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #F1F5F9; transition: 0.3s; }
 .resource-list a:hover { color: var(--gold-elite); padding-left: 10px; }
 .resource-list i { margin-right: 10px; color: var(--slate-text); }
+
+/* Sector Intelligence Engineering */
+.intel-header { padding: 80px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.intel-header h1 { font-family: 'Syncopate'; font-size: 38px; margin: 15px 0; }
+
+.sector-status-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; padding: 60px 0; }
+
+.sector-status-card { background: #1E293B; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+.sector-status-card:hover { border-color: var(--gold-elite); transform: translateY(-5px); }
+
+.sector-map-thumb { height: 180px; background-size: cover; background-position: center; position: relative; }
+.status-pill { position: absolute; top: 15px; left: 15px; font-size: 9px; font-weight: 800; padding: 5px 12px; border-radius: 4px; color: #fff; }
+.status-pill.online { background: var(--success-green); }
+.status-pill.caution { background: #F59E0B; }
+
+.sector-intel-body { padding: 30px; }
+.sector-intel-body h3 { font-family: 'Syncopate'; font-size: 14px; margin-bottom: 20px; }
+
+.intel-metrics { display: flex; justify-content: space-between; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 4px; margin-bottom: 20px; }
+.metric span { display: block; font-size: 9px; color: #94A3B8; text-transform: uppercase; margin-bottom: 5px; }
+.metric strong { font-size: 14px; color: var(--gold-elite); }
+
+.sector-intel-body p { font-size: 13px; color: #94A3B8; line-height: 1.6; margin-bottom: 25px; }
+
+.btn-enter-sector { display: block; text-align: center; background: transparent; border: 1px solid var(--gold-elite); color: var(--gold-elite); text-decoration: none; padding: 12px; font-family: 'Syncopate'; font-size: 10px; font-weight: 700; border-radius: 4px; transition: 0.3s; }
+.btn-enter-sector:hover { background: var(--gold-elite); color: #fff; }

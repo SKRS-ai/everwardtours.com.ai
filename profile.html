@@ -3,111 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDENTITY VAULT | Everward Global Profile</title>
+    <title>IDENTITY VAULT | Everward Global Personnel</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #F8FAFC !important;">
+<body class="stealth-theme">
 
-    <div class="dashboard-wrapper">
-        <aside class="dashboard-sidebar">
-            <div class="sidebar-brand"><div class="logo">EVR<span>TR</span></div></div>
-            <nav class="sidebar-nav">
-                <a href="dashboard.html"><i class="fa-solid fa-gauge-high"></i> Overview</a>
-                <a href="#"><i class="fa-solid fa-map-location-dot"></i> My Blueprints</a>
-                <a href="#" class="active"><i class="fa-solid fa-user-shield"></i> Identity Vault</a>
-                <a href="#"><i class="fa-solid fa-file-invoice-dollar"></i> Negotiated Rates</a>
-                <a href="support.html"><i class="fa-solid fa-headset"></i> Support Desk</a>
-            </nav>
-        </aside>
-
-        <main class="dashboard-content">
-            <header class="content-header">
-                <div class="welcome">
-                    <h2>Identity Vault</h2>
-                    <p>Manage your secure credentials and mission preferences.</p>
-                </div>
-                <div class="tier-status">
-                    <span class="badge-gold">ELITE CONCIERGE</span>
-                </div>
-            </header>
-
-            <div class="profile-grid">
-                <div class="profile-card">
-                    <div class="card-header">
-                        <h3><i class="fa-solid fa-address-card"></i> Personnel Data</h3>
-                        <button class="btn-edit">Edit</button>
-                    </div>
-                    <div class="profile-info-row">
-                        <div class="info-item">
-                            <label>Legal Name</label>
-                            <span>Johnathan Doe</span>
-                        </div>
-                        <div class="info-item">
-                            <label>Citizen ID</label>
-                            <span>GCJ-4402-ALPHA</span>
-                        </div>
-                    </div>
-                    <div class="profile-info-row">
-                        <div class="info-item">
-                            <label>Primary Email</label>
-                            <span>j.doe@corporate-intel.com</span>
-                        </div>
-                        <div class="info-item">
-                            <label>Secure Phone</label>
-                            <span>+1 (215) 555-0199</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="profile-card">
-                    <div class="card-header">
-                        <h3><i class="fa-solid fa-passport"></i> Travel Credentials</h3>
-                        <button class="btn-add-credential">+ Add Document</button>
-                    </div>
-                    <div class="document-list">
-                        <div class="doc-item">
-                            <i class="fa-solid fa-passport"></i>
-                            <div class="doc-meta">
-                                <strong>US Passport</strong>
-                                <span>Expires: Oct 2028</span>
-                            </div>
-                            <span class="status-verified">Verified</span>
-                        </div>
-                        <div class="doc-item">
-                            <i class="fa-solid fa-id-card"></i>
-                            <div class="doc-meta">
-                                <strong>Global Entry / TSA Pre</strong>
-                                <span>ID: 98440231</span>
-                            </div>
-                            <span class="status-verified">Verified</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="profile-card full-width">
-                    <div class="card-header">
-                        <h3><i class="fa-solid fa-sliders"></i> Logistics Preferences</h3>
-                    </div>
-                    <div class="pref-grid">
-                        <div class="pref-toggle">
-                            <label>Aviation</label>
-                            <p>Prefer Aisle, Mid-Cabin, Private Charter Options Only</p>
-                        </div>
-                        <div class="pref-toggle">
-                            <label>Ground Fleet</label>
-                            <p>Full-size SUV, Armored variants when available</p>
-                        </div>
-                        <div class="pref-toggle">
-                            <label>Stays</label>
-                            <p>High-altitude sectors, Minimum 24hr security presence</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="intel-header-bar">
+        <div class="container flex-between">
+            <div class="hq-status"><i class="fa-solid fa-user-check"></i> PERSONNEL ID: <span class="gold-text">GCJ-4402-ALPHA</span></div>
+            <div class="quick-access">
+                <a href="itinerary.html">Active Mission</a>
+                <a href="index.html" class="vault-btn"><i class="fa-solid fa-power-off"></i> Secure Logout</a>
             </div>
-        </main>
+        </div>
     </div>
+
+    <main class="container profile-layout">
+        <div class="profile-grid">
+            
+            <aside class="profile-sidebar">
+                <div class="id-card-visual">
+                    <div class="id-photo" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200');"></div>
+                    <div class="id-details">
+                        <h3>Johnathan Doe</h3>
+                        <span class="clearance-tag">Clearance: Level 4</span>
+                    </div>
+                </div>
+                <nav class="vault-nav">
+                    <a href="#" class="active"><i class="fa-solid fa-id-card"></i> Personal Intel</a>
+                    <a href="itinerary.html"><i class="fa-solid fa-map-location-dot"></i> Mission History</a>
+                    <a href="security.html"><i class="fa-solid fa-shield-halved"></i> Security Keys</a>
+                    <a href="checkout.html"><i class="fa-solid fa-credit-card"></i> Financial Vault</a>
+                </nav>
+            </aside>
+
+            <section class="vault-content">
+                <header class="vault-header">
+                    <h1>Personnel <span class="gold-text">Intel.</span></h1>
+                    <p>Manage your global credentials and biometric synchronization.</p>
+                </header>
+
+                <div class="data-group">
+                    <h3>01. Core Identity</h3>
+                    <div class="data-row">
+                        <div class="field">
+                            <label>Full Legal Name</label>
+                            <input type="text" value="Johnathan Marcus Doe" readonly>
+                        </div>
+                        <div class="field">
+                            <label>Primary Email</label>
+                            <input type="email" value="j.doe@corporate-secure.com">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-group">
+                    <h3>02. Logistics Preferences</h3>
+                    <div class="data-row">
+                        <div class="field">
+                            <label>Preferred Aviation</label>
+                            <select>
+                                <option>Phenom 300E (Light Jet)</option>
+                                <option>Global 7500 (Long Range)</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label>Ground Protocol</label>
+                            <select>
+                                <option>Armored SUV (Level B6)</option>
+                                <option>Executive Sedan</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vault-actions">
+                    <button class="btn-update-vault">Update Vault Data</button>
+                    <a href="legal.html" class="btn-data-request">Download Personnel Data (GDPR)</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
 
 </body>
 </html>

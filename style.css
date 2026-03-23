@@ -332,7 +332,48 @@ body {
     cursor: pointer;
     border-radius: 4px;
 }
+/* CHECKOUT GRID ARCHITECTURE */
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 60px;
+    padding: 60px 0 100px 0;
+}
 
+.checkout-card {
+    background: #fff;
+    color: var(--navy-bg);
+    padding: 30px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.checkout-card h3 { font-family: 'Syncopate'; font-size: 11px; margin-bottom: 20px; border-bottom: 1px solid #f1f5f9; padding-bottom: 15px; }
+
+.input-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.field { margin-bottom: 15px; }
+.field label { display: block; font-size: 9px; font-weight: 800; text-transform: uppercase; color: #94A3B8; margin-bottom: 5px; }
+.field input { width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: 'Inter'; font-weight: 600; }
+
+.payment-tabs { display: flex; gap: 10px; margin-bottom: 20px; }
+.p-tab { flex: 1; border: 1px solid #e2e8f0; padding: 10px; text-align: center; font-size: 12px; font-weight: 700; cursor: pointer; border-radius: 4px; }
+.p-tab.active { background: var(--navy-bg); color: #fff; border-color: var(--navy-bg); }
+
+.btn-lock-rate { width: 100%; padding: 25px; background: var(--gold-elite); color: #000; border: none; font-family: 'Syncopate'; font-weight: 800; font-size: 14px; cursor: pointer; margin-top: 20px; }
+
+/* SUMMARY SIDEBAR */
+.summary-card { background: var(--navy-light); padding: 30px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); }
+.summary-item { display: flex; gap: 15px; align-items: center; margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.summary-item img { width: 60px; height: 60px; object-fit: cover; border-radius: 4px; }
+.summary-text strong { display: block; font-size: 14px; }
+.summary-text span { font-size: 11px; opacity: 0.6; }
+
+.s-row { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 13px; }
+.s-row.total { font-weight: 800; font-size: 18px; color: var(--gold-elite); margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); }
+
+.trust-badge-box { margin-top: 30px; background: rgba(0,0,0,0.2); padding: 20px; border-radius: 4px; display: flex; gap: 15px; align-items: flex-start; }
+.trust-badge-box i { color: var(--gold-elite); font-size: 20px; }
+.trust-badge-box p { font-size: 11px; line-height: 1.4; }
 /* Fleet Command Engineering */
 .fleet-hero {
     background: var(--navy-command);

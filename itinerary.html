@@ -3,79 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Active Mission | Everward Tours Intelligence</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>MISSION ITINERARY | Sedona Sector | Everward Global</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="command-theme">
+<body class="stealth-theme">
 
-    <div class="intel-wrapper">
-        <div class="mission-status-bar">
-            <div class="status-item">
-                <span class="label">MISSION ID:</span>
-                <span class="value">#EVW-7702-AZ</span>
-            </div>
-            <div class="status-item">
-                <span class="label">CITIZEN:</span>
-                <span class="value">GLOBAL CITIZEN JOE</span>
-            </div>
-            <div class="status-item pulse-group">
-                <span class="pulse"></span>
-                <span class="label">LOGISTICS SYNC:</span>
-                <span class="value gold">OPTIMIZED</span>
+    <div class="intel-header-bar">
+        <div class="container flex-between">
+            <div class="hq-status"><i class="fa-solid fa-circle-check"></i> MISSION STATUS: <span class="gold-text">AUTHORIZED</span></div>
+            <div class="quick-access">
+                <a href="concierge.html"><i class="fa-solid fa-headset"></i> HQ Support</a>
+                <a href="profile.html" class="vault-btn">MY VAULT</a>
             </div>
         </div>
-
-        <main class="intel-main container">
-            
-            <div class="intel-grid">
-                <div class="intel-card">
-                    <div class="card-tag">SECTOR 1: AVIATION</div>
-                    <h2>PHX Sky Harbor</h2>
-                    <p class="intel-sub">Flight EV-104 // Gate B12</p>
-                    <div class="action-zone">
-                        <button class="btn-outline-gold"><i class="fa-solid fa-ticket"></i> Boarding Pass</button>
-                    </div>
-                </div>
-
-                <div class="intel-card highlight">
-                    <div class="card-tag">SECTOR 2: GROUND FLEET</div>
-                    <h2>Private Transport</h2>
-                    <p class="intel-sub">Black SUV // Driver: Verified</p>
-                    <div class="qr-container">
-                        <div class="qr-placeholder"><i class="fa-solid fa-qrcode"></i></div>
-                        <span>SCAN UPON PICKUP</span>
-                    </div>
-                </div>
-
-                <div class="intel-card">
-                    <div class="card-tag">SECTOR 3: DESTINATION</div>
-                    <h2>Casa Arizona</h2>
-                    <p class="intel-sub">Sedona // Encrypted Entry</p>
-                    <div class="key-display">
-                        <span class="key-label">Digital Key:</span>
-                        <code class="access-code">88-AZ-490</code>
-                    </div>
-                </div>
-            </div>
-
-            <div class="intelligence-map">
-                <div class="map-overlay">
-                    <h3><i class="fa-solid fa-satellite"></i> Live Logistics Reconnaissance</h3>
-                    <p>Current Fleet Position: 4.2 Miles from Terminal</p>
-                </div>
-                <div class="fake-map-visual">
-                    <div class="tracking-dot"></div>
-                </div>
-            </div>
-        </main>
-
-        <footer class="intel-footer">
-            <button class="emergency-btn"><i class="fa-solid fa-shield-halved"></i> 24/7 Citizen Defense Link</button>
-            <p>© 2026 GLOBAL CITIZEN JOE LLC // PHILADELPHIA HQ</p>
-        </footer>
     </div>
+
+    <main class="container itinerary-layout">
+        <header class="itinerary-header">
+            <span class="mission-id">REFERENCE: EVR-774-AZ-ALPHA</span>
+            <h1>Deployment: <span class="gold-text">Sedona Sector</span></h1>
+            <div class="countdown-bar">
+                <span>T-MINUS: 48:12:05</span>
+                <div class="progress-track"><div class="progress-fill" style="width: 75%;"></div></div>
+            </div>
+        </header>
+
+        <div class="itinerary-grid">
+            <section class="mission-timeline">
+                <div class="timeline-event">
+                    <div class="event-icon"><i class="fa-solid fa-plane-arrival"></i></div>
+                    <div class="event-text">
+                        <h4>Phase 01: Aviation Arrival</h4>
+                        <p><strong>Mar 24 // 14:00</strong> — Private Aviation Terminal, Sedona (KSEZ). Your Phenom 300E is scheduled for tarmac arrival.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="event-icon"><i class="fa-solid fa-car-side"></i></div>
+                    <div class="event-text">
+                        <h4>Phase 02: Fleet Staging</h4>
+                        <p><strong>Mar 24 // 14:15</strong> — Armored Escalade ESV staged at Gate 4. Driver verification: <span class="gold-text">Active</span>.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="event-icon"><i class="fa-solid fa-house-shield"></i></div>
+                    <div class="event-text">
+                        <h4>Phase 03: Asset Entry</h4>
+                        <p><strong>Mar 24 // 14:45</strong> — Casa Arizona Villa. Digital Key pushed to your Vault for perimeter access.</p>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="itinerary-sidebar">
+                <div class="intel-card">
+                    <h3>Sector Intelligence</h3>
+                    <ul class="intel-list">
+                        <li><i class="fa-solid fa-cloud-sun"></i> Weather: 72°F / Clear</li>
+                        <li><i class="fa-solid fa-signal"></i> Network: Starlink Mesh Level 5</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> Security: Tier 1 Perimeter</li>
+                    </ul>
+                </div>
+
+                <div class="action-card">
+                    <button class="btn-itinerary-action"><i class="fa-solid fa-file-pdf"></i> Download Briefing</button>
+                    <button class="btn-itinerary-action"><i class="fa-solid fa-mobile-screen-button"></i> Mobile Sync</button>
+                    <a href="index.html" class="btn-cancel">Request Mission Change</a>
+                </div>
+            </aside>
+        </div>
+    </main>
 
 </body>
 </html>

@@ -24,6 +24,27 @@ body.stealth-theme {
     color: var(--white-titanium);
     font-family: 'Inter', sans-serif;
 }
+/* FIELD GUIDE ARCHITECTURE */
+.guide-layout { padding: 80px 0 120px 0; }
+.guide-hero { text-align: center; margin-bottom: 80px; }
+.guide-hero h1 { font-family: 'Syncopate'; font-size: 52px; margin-top: 15px; }
+.guide-hero p { font-size: 18px; color: #94A3B8; max-width: 600px; margin: 20px auto; }
+
+.guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+
+.intel-article-card { background: var(--navy-light); border-radius: 4px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+.intel-article-card:hover { transform: translateY(-10px); border-color: var(--gold-elite); }
+
+.article-thumb { height: 220px; background-size: cover; background-position: center; position: relative; }
+.read-time { position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.6); color: #fff; font-size: 9px; font-weight: 800; padding: 4px 10px; border-radius: 4px; }
+
+.article-body { padding: 30px; }
+.article-cat { font-size: 10px; font-weight: 800; color: var(--gold-elite); text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px; }
+.article-body h3 { font-family: 'Syncopate'; font-size: 14px; margin-bottom: 15px; line-height: 1.4; color: #fff; }
+.article-body p { font-size: 13px; color: #94A3B8; line-height: 1.6; margin-bottom: 25px; }
+
+.btn-read { text-decoration: none; color: #fff; font-family: 'Syncopate'; font-size: 10px; font-weight: 700; border-bottom: 2px solid var(--gold-elite); padding-bottom: 5px; transition: 0.3s; }
+.btn-read:hover { color: var(--gold-elite); }
 /* SECTOR DIRECTORY ARCHITECTURE */
 .sectors-layout { padding: 80px 0; }
 .sectors-header { margin-bottom: 60px; text-align: center; }

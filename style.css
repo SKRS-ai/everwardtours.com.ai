@@ -576,6 +576,84 @@ body {
     cursor: pointer;
     border-radius: 4px;
 }
+/* SUCCESS BRIEFING ARCHITECTURE */
+.success-layout { 
+    height: 85vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.success-briefing-card { 
+    background: var(--navy-light); 
+    padding: 60px; 
+    border-radius: 4px; 
+    text-align: center; 
+    max-width: 700px; 
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+}
+
+.success-icon { 
+    font-size: 60px; 
+    color: var(--gold-elite); 
+    margin-bottom: 25px; 
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4));
+}
+
+.briefing-tag { 
+    display: block; 
+    font-size: 10px; 
+    font-weight: 800; 
+    letter-spacing: 3px; 
+    color: #94A3B8; 
+    margin-bottom: 15px; 
+}
+
+.success-briefing-card h1 { 
+    font-family: 'Syncopate'; 
+    font-size: 42px; 
+    margin-bottom: 20px; 
+}
+
+.mission-token-box { 
+    background: rgba(0,0,0,0.3); 
+    padding: 30px; 
+    border-radius: 4px; 
+    margin: 40px 0; 
+    border: 1px dashed var(--gold-elite);
+}
+
+.mission-token-box label { display: block; font-size: 9px; color: #94A3B8; margin-bottom: 10px; }
+.mission-token-box strong { font-family: 'Syncopate'; font-size: 24px; color: #fff; letter-spacing: 2px; }
+
+.next-steps-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    margin-bottom: 50px; 
+    text-align: left;
+}
+
+.step i { color: var(--gold-elite); font-size: 20px; margin-bottom: 15px; display: block; }
+.step h4 { font-family: 'Syncopate'; font-size: 11px; margin-bottom: 10px; }
+.step p { font-size: 13px; color: #94A3B8; line-height: 1.5; }
+
+.btn-itinerary-go { 
+    display: block; 
+    background: var(--gold-elite); 
+    color: #000; 
+    padding: 22px; 
+    text-decoration: none; 
+    font-family: 'Syncopate'; 
+    font-weight: 800; 
+    font-size: 13px; 
+    border-radius: 4px; 
+    transition: 0.3s;
+}
+
+.btn-itinerary-go:hover { transform: scale(1.02); box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2); }
+.btn-return { display: block; margin-top: 20px; color: #94A3B8; font-size: 11px; text-decoration: none; }
 /* CHECKOUT GRID ARCHITECTURE */
 .checkout-grid {
     display: grid;

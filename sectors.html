@@ -3,73 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SECTOR INTELLIGENCE | Everward Global Safe Zones</title>
+    <title>GLOBAL SECTOR DIRECTORY | Everward Global Logistics</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #0F172A !important; color: #fff;">
+<body class="stealth-theme">
 
-    <header class="intel-header">
-        <div class="container">
-            <span class="intel-tag">SITUATIONAL AWARENESS // GLOBAL REACH</span>
-            <h1>Sector Intelligence</h1>
-            <p>Real-time status of the Everward Global Safe Zone Network.</p>
+    <div class="intel-header-bar">
+        <div class="container flex-between">
+            <div class="hq-status"><i class="fa-solid fa-earth-americas"></i> NETWORK TOPOGRAPHY: <span class="gold-text">14 ACTIVE SECTORS</span></div>
+            <div class="quick-access">
+                <a href="index.html">Command Home</a>
+                <a href="discover.html">Tactical Map</a>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <main class="container">
-        <section class="sector-status-grid">
+    <main class="container sectors-layout">
+        <header class="sectors-header">
+            <span class="sub-intel">DEPLOYMENT DIRECTORY // V.2026</span>
+            <h1>Vetted <span class="gold-text">Sectors.</span></h1>
+            <p>Select a verified geographic sector to view available stays, aviation hangars, and ground fleet assets.</p>
+        </header>
+
+        <div class="sectors-grid">
             
-            <div class="sector-status-card">
-                <div class="sector-map-thumb" style="background-image: url('https://images.unsplash.com/photo-1501446529957-6226bd447c46?q=80&w=400');">
-                    <span class="status-pill online">STRATEGIC READY</span>
+            <div class="sector-card-v1">
+                <div class="sector-thumb" style="background-image: url('https://images.unsplash.com/photo-1501446529957-6226bd447c46?q=80&w=600');">
+                    <div class="sector-badge">NORTH AMERICA</div>
                 </div>
-                <div class="sector-intel-body">
-                    <h3>Sedona Sector [AZ-01]</h3>
-                    <div class="intel-metrics">
-                        <div class="metric"><span>Fleet</span><strong>98%</strong></div>
-                        <div class="metric"><span>Asset Cap</span><strong>High</strong></div>
-                        <div class="metric"><span>Security</span><strong>Tier 1</strong></div>
-                    </div>
-                    <p>Primary focus: High-altitude luxury stays and tactical ground transport. Optimal for Citizens seeking isolation with full logistics support.</p>
-                    <a href="results.html" class="btn-enter-sector">INITIALIZE DEPLOYMENT</a>
-                </div>
-            </div>
-
-            <div class="sector-status-card">
-                <div class="sector-map-thumb" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=400');">
-                    <span class="status-pill online">STRATEGIC READY</span>
-                </div>
-                <div class="sector-intel-body">
-                    <h3>Dubai Sector [UAE-04]</h3>
-                    <div class="intel-metrics">
-                        <div class="metric"><span>Fleet</span><strong>100%</strong></div>
-                        <div class="metric"><span>Asset Cap</span><strong>Max</strong></div>
-                        <div class="metric)<span>Security</span><strong>Tier 1</strong></div>
-                    </div>
-                    <p>Primary focus: Aviation staging and corporate diplomatic logistics. 24/7 direct hangar access and armored fleet standby.</p>
-                    <a href="results.html" class="btn-enter-sector">INITIALIZE DEPLOYMENT</a>
+                <div class="sector-details">
+                    <div class="sector-id">SECTOR: <span class="gold-text">AZ-01</span></div>
+                    <h3>SEDONA HIGHLANDS</h3>
+                    <ul class="sector-stats">
+                        <li><i class="fa-solid fa-shield-check"></i> Security: Tier 1</li>
+                        <li><i class="fa-solid fa-plane"></i> Aviation: Active</li>
+                        <li><i class="fa-solid fa-car"></i> Fleet: Armored Available</li>
+                    </ul>
+                    <a href="results.html" class="btn-sector-enter">ENTER SECTOR</a>
                 </div>
             </div>
 
-            <div class="sector-status-card">
-                <div class="sector-map-thumb" style="background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=400');">
-                    <span class="status-pill caution">LIMITED ASSETS</span>
+            <div class="sector-card-v1">
+                <div class="sector-thumb" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=600');">
+                    <div class="sector-badge">MIDDLE EAST</div>
                 </div>
-                <div class="sector-intel-body">
-                    <h3>London Sector [UK-02]</h3>
-                    <div class="intel-metrics">
-                        <div class="metric"><span>Fleet</span><strong>72%</strong></div>
-                        <div class="metric"><span>Asset Cap</span><strong>Mid</strong></div>
-                        <div class="metric"><span>Security</span><strong>Tier 1</strong></div>
-                    </div>
-                    <p>Primary focus: Executive transit and urban safe houses. Note: Fleet availability is restricted due to upcoming regional diplomatic summits.</p>
-                    <a href="results.html" class="btn-enter-sector">VIEW REMAINING ASSETS</a>
+                <div class="sector-details">
+                    <div class="sector-id">SECTOR: <span class="gold-text">UAE-04</span></div>
+                    <h3>DUBAI CENTRAL</h3>
+                    <ul class="sector-stats">
+                        <li><i class="fa-solid fa-shield-check"></i> Security: Tier 1</li>
+                        <li><i class="fa-solid fa-plane"></i> Aviation: Hangar Max</li>
+                        <li><i class="fa-solid fa-car"></i> Fleet: Executive Only</li>
+                    </ul>
+                    <a href="results.html" class="btn-sector-enter">ENTER SECTOR</a>
                 </div>
             </div>
 
-        </section>
+            <div class="sector-card-v1">
+                <div class="sector-thumb" style="background-image: url('https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=600');">
+                    <div class="sector-badge">EUROPE</div>
+                </div>
+                <div class="sector-details">
+                    <div class="sector-id">SECTOR: <span class="gold-text">UK-02</span></div>
+                    <h3>LONDON METRO</h3>
+                    <ul class="sector-stats">
+                        <li><i class="fa-solid fa-shield-check"></i> Security: Tier 1</li>
+                        <li><i class="fa-solid fa-plane"></i> Aviation: LCY Restricted</li>
+                        <li><i class="fa-solid fa-car"></i> Fleet: High Density</li>
+                    </ul>
+                    <a href="results.html" class="btn-sector-enter">ENTER SECTOR</a>
+                </div>
+            </div>
+
+        </div>
     </main>
 
 </body>

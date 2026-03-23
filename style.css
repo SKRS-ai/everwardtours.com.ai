@@ -226,6 +226,23 @@ body.stealth-theme {
 .intel-list-sm { list-style: none; padding: 0; }
 .intel-list-sm li { font-size: 12px; color: #94A3B8; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
 
+/* GLOSSARY & CODEX ARCHITECTURE */
+.glossary-layout { padding: 80px 0 120px 0; }
+.glossary-hero { text-align: left; margin-bottom: 80px; }
+.glossary-hero h1 { font-family: 'Syncopate'; font-size: 52px; margin-top: 15px; }
+
+.glossary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; align-items: flex-start; }
+
+.glossary-cat-box h3 { font-family: 'Syncopate'; font-size: 14px; color: var(--gold-elite); margin-bottom: 30px; display: flex; align-items: center; gap: 12px; }
+.glossary-cat-box h3 i { font-size: 18px; }
+
+.term-item { margin-bottom: 35px; }
+.term-item strong { display: block; font-size: 16px; color: #fff; margin-bottom: 8px; font-weight: 700; }
+.term-item p { font-size: 14px; color: #94A3B8; line-height: 1.6; }
+
+.glossary-footer { margin-top: 100px; padding: 50px; background: var(--navy-light); border-radius: 4px; text-align: center; border: 1px solid rgba(255,255,255,0.05); }
+.glossary-footer p { font-size: 16px; margin-bottom: 25px; color: #94A3B8; }
+.btn-gold-action { background: var(--gold-elite); color: #000; padding: 18px 40px; text-decoration: none; font-family: 'Syncopate'; font-size: 12px; font-weight: 800; border-radius: 4px; }
 /* CHAT INTERFACE */
 .comm-interface { display: flex; flex-direction: column; background: #fff; border-radius: 4px; overflow: hidden; }
 .chat-vault { flex-grow: 1; padding: 40px; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; }

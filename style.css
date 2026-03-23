@@ -152,7 +152,40 @@ body.stealth-theme {
 }
 
 .btn-execute:hover { background: var(--gold-elite); }
+/* CONCIERGE TERMINAL ARCHITECTURE */
+.concierge-layout { padding: 40px 0 80px 0; }
+.terminal-grid { display: grid; grid-template-columns: 320px 1fr; gap: 40px; height: 75vh; }
 
+.coordinator-sidebar { background: var(--navy-light); padding: 30px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.05); }
+.agent-avatar { width: 80px; height: 80px; border-radius: 50%; margin-bottom: 20px; background-size: cover; border: 2px solid var(--gold-elite); }
+.hq-profile-card h3 { font-family: 'Syncopate'; font-size: 14px; margin-bottom: 5px; }
+.status-online { display: block; font-size: 9px; font-weight: 800; color: #10B981; margin-bottom: 15px; }
+.agent-bio { font-size: 12px; color: #94A3B8; line-height: 1.6; }
+
+.sector-brief { margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); }
+.sector-brief h4 { font-family: 'Syncopate'; font-size: 10px; color: var(--gold-elite); margin-bottom: 15px; }
+.intel-list-sm { list-style: none; padding: 0; }
+.intel-list-sm li { font-size: 12px; color: #94A3B8; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+
+/* CHAT INTERFACE */
+.comm-interface { display: flex; flex-direction: column; background: #fff; border-radius: 4px; overflow: hidden; }
+.chat-vault { flex-grow: 1; padding: 40px; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; }
+
+.msg { max-width: 80%; }
+.msg.agent { align-self: flex-start; }
+.msg.user { align-self: flex-end; text-align: right; }
+.msg.system { align-self: center; font-size: 10px; color: #94A3B8; text-transform: uppercase; letter-spacing: 1px; }
+
+.bubble { padding: 15px 20px; border-radius: 12px; font-size: 14px; line-height: 1.5; }
+.agent .bubble { background: var(--navy-light); color: #fff; border-bottom-left-radius: 2px; }
+.user .bubble { background: var(--gold-elite); color: #000; font-weight: 600; border-bottom-right-radius: 2px; }
+
+.timestamp { display: block; font-size: 10px; color: #94A3B8; margin-top: 5px; font-weight: 700; }
+
+.input-area { padding: 25px 40px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; gap: 20px; }
+.input-area input { flex-grow: 1; border: 1px solid #E2E8F0; padding: 15px; border-radius: 4px; outline: none; font-family: 'Inter'; font-weight: 600; }
+.btn-send { background: var(--navy-bg); color: #fff; border: none; padding: 0 25px; border-radius: 4px; cursor: pointer; transition: 0.3s; }
+.btn-send:hover { background: var(--gold-elite); color: #000; }
 /* EXTRANET DASHBOARD ARCHITECTURE */
 .extranet-layout { display: grid; grid-template-columns: 280px 1fr; gap: 40px; padding: 60px 0; }
 

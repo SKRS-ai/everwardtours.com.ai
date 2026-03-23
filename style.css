@@ -25,6 +25,38 @@ body.stealth-theme {
     font-family: 'Inter', sans-serif;
 }
 
+/* ITINERARY & TIMELINE ARCHITECTURE */
+.itinerary-layout { padding: 60px 0 100px 0; }
+
+.itinerary-header { margin-bottom: 50px; }
+.mission-id { font-size: 10px; font-weight: 800; color: var(--gold-elite); letter-spacing: 2px; }
+.itinerary-header h1 { font-family: 'Syncopate'; font-size: 32px; margin: 10px 0 25px 0; }
+
+.countdown-bar { display: flex; align-items: center; gap: 20px; background: rgba(255,255,255,0.05); padding: 15px 25px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); }
+.countdown-bar span { font-family: 'Syncopate'; font-size: 12px; }
+.progress-track { flex-grow: 1; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--gold-elite); box-shadow: 0 0 10px var(--gold-elite); }
+
+.itinerary-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; }
+
+/* TIMELINE EVENTS */
+.mission-timeline { border-left: 2px solid rgba(255,255,255,0.1); padding-left: 30px; position: relative; }
+.timeline-event { position: relative; margin-bottom: 50px; }
+.event-icon { position: absolute; left: -46px; top: 0; background: var(--navy-bg); width: 30px; height: 30px; border: 2px solid var(--gold-elite); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold-elite); font-size: 12px; }
+
+.event-text h4 { font-family: 'Syncopate'; font-size: 13px; margin-bottom: 10px; color: var(--gold-elite); }
+.event-text p { font-size: 14px; color: #94A3B8; line-height: 1.6; }
+
+/* SIDEBAR CARDS */
+.intel-card, .action-card { background: var(--navy-light); padding: 30px; border-radius: 4px; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.05); }
+.intel-card h3 { font-family: 'Syncopate'; font-size: 11px; margin-bottom: 20px; }
+.intel-list { list-style: none; padding: 0; }
+.intel-list li { font-size: 13px; margin-bottom: 15px; display: flex; align-items: center; gap: 12px; }
+.intel-list i { color: var(--gold-elite); width: 15px; }
+
+.btn-itinerary-action { width: 100%; padding: 15px; background: transparent; border: 1px solid rgba(255,255,255,0.2); color: #fff; font-family: 'Syncopate'; font-size: 10px; font-weight: 700; cursor: pointer; margin-bottom: 10px; transition: 0.3s; }
+.btn-itinerary-action:hover { background: #fff; color: var(--navy-bg); }
+.btn-cancel { display: block; text-align: center; margin-top: 15px; font-size: 11px; color: #94A3B8; text-decoration: none; }
 /* SEARCH CONSOLE RESTORATION */
 .search-console {
     background: #fff;

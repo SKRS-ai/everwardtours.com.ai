@@ -3,162 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vexilla | Global Mobility Orchestrator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap" rel="stylesheet">
+    <title>Vexilla | Global Mobility & Logistics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-deep: #050505;
-            --accent-blue: #007bff;
-            --vex-cyan: #00f2fe;
-            --glass: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.1);
+            --bg-white: #ffffff;
+            --vex-yellow: #FFD700; /* Safety Yellow */
+            --vex-black: #1a1a1a;
+            --soft-gray: #f8f9fa;
+            --border: #e9ecef;
+            --text-main: #212529;
+            --text-muted: #6c757d;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: var(--bg-deep); color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        body { background: var(--bg-white); color: var(--text-main); font-family: 'Inter', sans-serif; overflow-x: hidden; }
 
-        /* ELITE NAVIGATION BAR */
+        /* PROFESSIONAL HEADER */
         nav {
-            position: fixed; top: 0; width: 100%; padding: 25px 50px;
+            position: fixed; top: 0; width: 100%; padding: 15px 60px;
             display: flex; justify-content: space-between; align-items: center;
-            z-index: 1000; backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border);
+            z-index: 1000; background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid var(--border); backdrop-filter: blur(10px);
         }
-        .logo-group { display: flex; align-items: center; gap: 15px; }
-        .logo-group img { width: 40px; filter: drop-shadow(0 0 5px var(--vex-cyan)); }
-        .nav-links a { text-decoration: none; color: #888; font-size: 0.7rem; font-weight: 800; letter-spacing: 2px; margin-left: 30px; transition: 0.3s; }
-        .nav-links a:hover { color: var(--vex-cyan); }
+        .logo-group { display: flex; align-items: center; gap: 15px; text-decoration: none; }
+        .logo-group img { width: 50px; }
+        .logo-group span { font-weight: 900; letter-spacing: 2px; color: var(--vex-black); font-size: 1.1rem; }
 
-        /* HERO & UNIFIED SEARCH */
-        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+        .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; margin-left: 35px; transition: 0.2s; }
+        .nav-links a:hover { color: var(--vex-black); border-bottom: 2px solid var(--vex-yellow); }
+
+        /* HERO & SEARCH TERMINAL */
+        .hero { min-height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 120px 20px 60px; background: var(--soft-gray); }
         
-        .search-container {
-            background: var(--glass);
-            padding: 40px; border-radius: 30px; border: 1px solid var(--glass-border);
-            width: 100%; max-width: 900px; backdrop-filter: blur(40px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        .hero-title { text-align: center; margin-bottom: 40px; }
+        .hero-title h1 { font-size: 3.5rem; font-weight: 900; letter-spacing: -2px; color: var(--vex-black); }
+        .hero-title p { color: var(--text-muted); font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase; margin-top: 10px; }
+
+        /* THE SEARCH COMMAND BOX */
+        .search-terminal {
+            background: #fff; width: 100%; max-width: 1000px;
+            border-radius: 12px; border: 1px solid var(--border);
+            box-shadow: 0 15px 45px rgba(0,0,0,0.08); overflow: hidden;
         }
 
-        .search-tabs { display: flex; gap: 20px; margin-bottom: 25px; justify-content: center; }
-        .tab { font-size: 0.7rem; letter-spacing: 2px; color: #555; cursor: pointer; padding: 10px 20px; border-radius: 50px; border: 1px solid transparent; transition: 0.3s; }
-        .tab.active { color: #fff; border-color: var(--vex-cyan); background: rgba(0, 242, 254, 0.05); }
+        .search-tabs { display: flex; background: var(--vex-black); }
+        .tab { 
+            flex: 1; text-align: center; padding: 18px; color: #888; 
+            font-size: 0.7rem; font-weight: 800; letter-spacing: 2px; cursor: pointer; transition: 0.3s;
+        }
+        .tab.active { background: var(--vex-yellow); color: var(--vex-black); }
 
-        .main-input-wrap { position: relative; width: 100%; }
-        .main-search {
-            width: 100%; padding: 25px 35px; background: rgba(0,0,0,0.5);
-            border: 1px solid var(--glass-border); border-radius: 15px;
-            color: #fff; font-size: 1.2rem; outline: none; transition: 0.3s;
+        .search-body { padding: 40px; }
+        .input-row { display: flex; gap: 15px; margin-bottom: 25px; }
+        
+        .main-input {
+            flex: 3; padding: 20px 25px; border: 2px solid var(--border);
+            border-radius: 8px; font-size: 1.1rem; outline: none; transition: 0.2s;
         }
-        .main-search:focus { border-color: var(--vex-cyan); box-shadow: 0 0 20px rgba(0, 242, 254, 0.2); }
+        .main-input:focus { border-color: var(--vex-yellow); }
 
-        /* QUICK OPTIONS GRID */
-        .options-grid {
-            display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-top: 25px;
+        .search-btn {
+            flex: 1; background: var(--vex-black); color: var(--vex-yellow);
+            border: none; border-radius: 8px; font-weight: 900; letter-spacing: 2px;
+            cursor: pointer; transition: 0.3s; text-transform: uppercase;
         }
-        .opt-card {
-            background: rgba(255,255,255,0.02); padding: 15px; border-radius: 12px;
-            border: 1px solid var(--glass-border); cursor: pointer; transition: 0.3s;
+        .search-btn:hover { background: #000; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+        /* LOGISTICS OPTIONS GRID */
+        .options-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .opt-item { 
+            padding: 15px; border: 1px solid var(--border); border-radius: 8px;
+            cursor: pointer; transition: 0.2s; background: var(--soft-gray);
         }
-        .opt-card:hover { background: var(--glass-border); transform: translateY(-3px); }
-        .opt-card span { display: block; font-size: 0.6rem; color: #666; letter-spacing: 1px; margin-bottom: 5px; }
-        .opt-card p { font-size: 0.8rem; font-weight: 700; color: #bbb; }
+        .opt-item:hover { border-color: var(--vex-yellow); background: #fff; }
+        .opt-item span { font-size: 0.6rem; font-weight: 800; color: var(--text-muted); display: block; margin-bottom: 5px; }
+        .opt-item p { font-size: 0.85rem; font-weight: 700; color: var(--vex-black); }
+
+        /* LOGISTICS PARTNER SECTION */
+        .partners { padding: 80px 60px; background: #fff; text-align: center; }
+        .partners h2 { font-size: 0.7rem; letter-spacing: 4px; color: #ccc; margin-bottom: 40px; }
+        .partner-flex { display: flex; justify-content: center; gap: 60px; opacity: 0.4; filter: grayscale(1); }
 
         /* FOOTER */
-        footer { padding: 80px 50px; background: #020202; border-top: 1px solid #111; }
+        footer { background: var(--vex-black); color: #fff; padding: 80px 60px; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
-        .footer-col h4 { font-size: 0.7rem; letter-spacing: 3px; color: var(--vex-cyan); margin-bottom: 25px; }
-        .footer-col a { display: block; text-decoration: none; color: #555; font-size: 0.8rem; margin-bottom: 12px; transition: 0.3s; }
+        .footer-col h4 { font-size: 0.75rem; color: var(--vex-yellow); letter-spacing: 2px; margin-bottom: 25px; }
+        .footer-col a { display: block; color: #888; text-decoration: none; font-size: 0.85rem; margin-bottom: 12px; transition: 0.2s; }
         .footer-col a:hover { color: #fff; }
 
-        @media (max-width: 768px) { .options-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 768px) {
+            nav { padding: 15px 20px; }
+            .hero-title h1 { font-size: 2.2rem; }
+            .input-row { flex-direction: column; }
+            .options-grid { grid-template-columns: 1fr 1fr; }
+        }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo-group">
+        <a href="#" class="logo-group">
             <img src="SKRMG.png" alt="SKRMG">
-            <span style="font-weight: 900; letter-spacing: 4px; font-size: 0.8rem;">VEXILLA</span>
-        </div>
+            <span>VEXILLA</span>
+        </a>
         <div class="nav-links">
+            <a href="#">SOLUTIONS</a>
             <a href="#">FLEET</a>
-            <a href="#">LOGISTICS</a>
-            <a href="#">WORLD TOUR</a>
+            <a href="#">TRACKING</a>
             <a href="#">INVEST</a>
         </div>
     </nav>
 
     <main class="hero">
-        <div style="margin-bottom: 50px;">
-            <h1 style="font-size: 3.5rem; font-weight: 900; letter-spacing: -2px;">Orchestrate Your Motion.</h1>
-            <p style="color: #666; letter-spacing: 4px; font-size: 0.8rem; margin-top: 10px;">GLOBAL MOBILITY & LOGISTICS COMMAND</p>
+        <div class="hero-title">
+            <p>Global Motion Orchestrated</p>
+            <h1>Move with Precision.</h1>
         </div>
 
-        <div class="search-container">
+        <div class="search-terminal">
             <div class="search-tabs">
-                <div class="tab active">FLIGHTS</div>
-                <div class="tab">PRIVATE JET</div>
-                <div class="tab">CARGO & FREIGHT</div>
-                <div class="tab">ITINERARY</div>
+                <div class="tab active">WORLD TOUR</div>
+                <div class="tab">EXECUTIVE JET</div>
+                <div class="tab">CARGO LOGISTICS</div>
+                <div class="tab">SHADOW LUGGAGE</div>
             </div>
 
-            <div class="main-input-wrap">
-                <input type="text" class="main-search" placeholder="Enter Destination, Flight #, or Tracking ID...">
-            </div>
+            <div class="search-body">
+                <div class="input-row">
+                    <input type="text" class="main-input" placeholder="Search flights, tracking IDs, or destinations...">
+                    <button class="search-btn">Compute</button>
+                </div>
 
-            <div class="options-grid">
-                <div class="opt-card">
-                    <span>MODE</span>
-                    <p>Executive Jet</p>
-                </div>
-                <div class="opt-card">
-                    <span>LOGISTICS</span>
-                    <p>Shadow Luggage</p>
-                </div>
-                <div class="opt-card">
-                    <span>PACKING</span>
-                    <p>AI Smart Checklist</p>
-                </div>
-                <div class="opt-card">
-                    <span>STATUS</span>
-                    <p>Live Telemetry</p>
+                <div class="options-grid">
+                    <div class="opt-item">
+                        <span>TRANSPORT</span>
+                        <p>Multi-Modal</p>
+                    </div>
+                    <div class="opt-item">
+                        <span>LUGGAGE</span>
+                        <p>Hands-Free</p>
+                    </div>
+                    <div class="opt-item">
+                        <span>PACKING</span>
+                        <p>AI Generated</p>
+                    </div>
+                    <div class="opt-item">
+                        <span>REAL-TIME</span>
+                        <p>Flight Pulse</p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <section class="partners">
+        <h2>TRUSTED LOGISTICS PARTNERS</h2>
+        <div class="partner-flex">
+            <span style="font-weight: 900; font-size: 1.2rem;">AMTRAK</span>
+            <span style="font-weight: 900; font-size: 1.2rem;">DELTA</span>
+            <span style="font-weight: 900; font-size: 1.2rem;">FEDEX</span>
+            <span style="font-weight: 900; font-size: 1.2rem;">NETJETS</span>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>VEXILLA-KINETIC</h4>
-                <a href="#">Flight Tracking</a>
-                <a href="#">Multi-Modal GPS</a>
-                <a href="#">Jet Charters</a>
-                <a href="#">Rental Ecosystem</a>
+                <h4>VEXILLA-VOYAGE</h4>
+                <a href="#">Itinerary Planner</a>
+                <a href="#">Booking Affiliate</a>
+                <a href="#">Travel Concierge</a>
+                <a href="#">Global Citizen Pass</a>
             </div>
             <div class="footer-col">
-                <h4>VEXILLA-VOYAGE</h4>
-                <a href="#">Affiliate Portal</a>
-                <a href="#">World Tour Booking</a>
-                <a href="#">Itinerary Engine</a>
-                <a href="#">Concierge AI</a>
+                <h4>VEXILLA-KINETIC</h4>
+                <a href="#">Jet Chartering</a>
+                <a href="#">Fleet Management</a>
+                <a href="#">Rental Ecosystem</a>
+                <a href="#">Motion Telemetry</a>
             </div>
             <div class="footer-col">
                 <h4>LOGISTICS</h4>
-                <a href="#">Cargo Tracking</a>
+                <a href="#">Shadow Luggage</a>
+                <a href="#">Cargo Intelligence</a>
                 <a href="#">Supply Chain AI</a>
-                <a href="#">Luggage Forwarding</a>
-                <a href="#">Freight Quotes</a>
+                <a href="#">Freight Services</a>
             </div>
             <div class="footer-col">
-                <h4>INVESTOR RELATIONS</h4>
+                <h4>CORPORATE</h4>
+                <a href="#">Solomon Kin Records</a>
                 <a href="#">Seed Round 2026</a>
-                <a href="#">Executive Summary</a>
-                <a href="#">Pitch Deck</a>
-                <a href="#">Contact Board</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
             </div>
         </div>
-        <div style="margin-top: 80px; text-align: center; font-size: 0.6rem; color: #222; letter-spacing: 5px;">
-            &copy; 2026 SOLOMON KIN RECORDS, LLC MEDIA GROUP | ALL RIGHTS RESERVED
+        <div style="margin-top: 60px; padding-top: 40px; border-top: 1px solid #222; text-align: center; color: #444; font-size: 0.7rem; letter-spacing: 2px;">
+            &copy; 2026 SOLOMON KIN RECORDS, LLC MEDIA GROUP | VEXILLA REG. DBA
         </div>
     </footer>
 

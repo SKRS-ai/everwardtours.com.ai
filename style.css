@@ -68,7 +68,31 @@ body.stealth-theme {
 
 .event-text h4 { font-family: 'Syncopate'; font-size: 13px; margin-bottom: 10px; color: var(--gold-elite); }
 .event-text p { font-size: 14px; color: #94A3B8; line-height: 1.6; }
+/* PARTNER RECRUITMENT ARCHITECTURE */
+.partner-recruitment { padding: 80px 0 120px 0; }
+.partner-hero { text-align: center; margin-bottom: 80px; }
+.partner-hero h1 { font-family: 'Syncopate'; font-size: 52px; margin-top: 15px; }
+.partner-hero p { font-size: 18px; color: #94A3B8; max-width: 600px; margin: 20px auto; }
 
+.partner-value-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.p-value-card { background: var(--navy-light); padding: 50px 30px; border-radius: 4px; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; position: relative; }
+.p-value-card:hover { border-color: var(--gold-elite); transform: translateY(-5px); }
+
+.p-value-card i { font-size: 40px; color: var(--gold-elite); margin-bottom: 25px; }
+.p-value-card h3 { font-family: 'Syncopate'; font-size: 16px; margin-bottom: 15px; }
+.p-value-card p { font-size: 14px; color: #94A3B8; line-height: 1.6; margin-bottom: 30px; }
+
+.p-badge { position: absolute; top: 15px; right: 15px; background: var(--gold-elite); color: #000; font-size: 9px; font-weight: 800; padding: 4px 10px; border-radius: 4px; font-family: 'Syncopate'; }
+
+.btn-partner-action { display: block; background: transparent; border: 1px solid #fff; color: #fff; padding: 15px; text-decoration: none; font-family: 'Syncopate'; font-size: 10px; font-weight: 700; transition: 0.3s; }
+.btn-partner-action:hover { background: #fff; color: var(--navy-bg); }
+
+/* FAQ MINI */
+.partner-faq-preview { margin-top: 100px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 60px; }
+.partner-faq-preview h3 { font-family: 'Syncopate'; font-size: 20px; margin-bottom: 40px; text-align: center; }
+.faq-mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+.faq-item strong { display: block; color: var(--gold-elite); font-size: 14px; margin-bottom: 10px; }
+.faq-item p { font-size: 14px; color: #94A3B8; line-height: 1.5; }
 /* SIDEBAR CARDS */
 .intel-card, .action-card { background: var(--navy-light); padding: 30px; border-radius: 4px; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.05); }
 .intel-card h3 { font-family: 'Syncopate'; font-size: 11px; margin-bottom: 20px; }

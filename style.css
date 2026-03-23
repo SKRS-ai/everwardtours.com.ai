@@ -621,7 +621,53 @@ input:checked + .slider:before { transform: translateX(20px); }
     color: #fff; 
 }
 .codex-footer p { font-size: 16px; margin-bottom: 25px; opacity: 0.8; }
+/* Checkout Engineering */
+.checkout-container { display: flex; gap: 60px; padding: 60px 0 100px 0; }
+.checkout-main { flex: 1.8; }
+.checkout-sidebar { flex: 1; }
 
+.checkout-header { margin-bottom: 50px; }
+.secure-tag { font-size: 10px; font-weight: 800; color: var(--success-green); letter-spacing: 1px; }
+.checkout-header h1 { font-family: 'Syncopate'; font-size: 32px; margin-top: 10px; }
+
+/* Sections */
+.checkout-section { display: flex; gap: 30px; margin-bottom: 50px; }
+.section-num { background: var(--navy-command); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Syncopate'; font-size: 14px; flex-shrink: 0; }
+.section-body { flex-grow: 1; }
+.section-body h3 { font-family: 'Syncopate'; font-size: 14px; margin-bottom: 20px; }
+
+.input-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.field { margin-bottom: 20px; }
+.field.full { width: 100%; }
+.field label { display: block; font-size: 10px; font-weight: 800; color: var(--slate-text); text-transform: uppercase; margin-bottom: 8px; }
+.field input { width: 100%; padding: 14px; border: 1px solid var(--border-light); border-radius: 4px; font-size: 15px; font-family: 'Inter'; background: #fff; }
+
+/* Payment Options */
+.payment-methods { display: flex; gap: 15px; margin-bottom: 30px; }
+.pay-option { flex: 1; border: 1px solid var(--border-light); padding: 15px; border-radius: 4px; cursor: pointer; text-align: center; transition: 0.3s; }
+.pay-option:has(input:checked) { border-color: var(--gold-elite); background: #FFFDF5; }
+.pay-option input { display: none; }
+.pay-option span { font-size: 13px; font-weight: 700; }
+
+.btn-lock-blueprint { width: 100%; padding: 25px; background: var(--gold-elite); color: #fff; border: none; font-family: 'Syncopate'; font-weight: 800; font-size: 16px; border-radius: 4px; cursor: pointer; margin-top: 20px; }
+.final-disclaimer { font-size: 11px; color: var(--slate-text); text-align: center; margin-top: 20px; line-height: 1.5; }
+
+/* Sidebar Summary */
+.blueprint-summary { background: #fff; border: 1px solid var(--border-light); padding: 30px; border-radius: 8px; position: sticky; top: 120px; }
+.blueprint-summary h4 { font-family: 'Syncopate'; font-size: 12px; margin-bottom: 25px; border-bottom: 1px solid var(--border-light); padding-bottom: 15px; }
+
+.summary-asset { display: flex; gap: 15px; align-items: center; margin-bottom: 30px; }
+.asset-mini-img { width: 60px; height: 60px; background-size: cover; border-radius: 4px; }
+.asset-mini-text strong { display: block; font-size: 14px; }
+.asset-mini-text span { font-size: 11px; color: var(--slate-text); }
+
+.summary-breakdown { font-size: 14px; }
+.s-row { display: flex; justify-content: space-between; margin-bottom: 12px; }
+.s-row.total { font-weight: 800; font-size: 20px; color: var(--navy-command); margin-top: 15px; }
+
+.security-guarantee { margin-top: 30px; background: var(--titanium); padding: 20px; border-radius: 4px; display: flex; gap: 15px; align-items: flex-start; }
+.security-guarantee i { color: var(--gold-elite); font-size: 20px; }
+.security-guarantee p { font-size: 11px; color: var(--slate-text); line-height: 1.4; }
 /* Media & Investor Engineering */
 .media-hero {
     background: var(--navy-command);

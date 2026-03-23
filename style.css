@@ -24,7 +24,29 @@ body.stealth-theme {
     color: var(--white-titanium);
     font-family: 'Inter', sans-serif;
 }
+/* SECTOR DIRECTORY ARCHITECTURE */
+.sectors-layout { padding: 80px 0; }
+.sectors-header { margin-bottom: 60px; text-align: center; }
+.sectors-header h1 { font-family: 'Syncopate'; font-size: 42px; margin-top: 10px; }
 
+.sectors-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+
+.sector-card-v1 { background: var(--navy-light); border: 1px solid rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden; transition: 0.3s; }
+.sector-card-v1:hover { transform: translateY(-10px); border-color: var(--gold-elite); box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
+
+.sector-thumb { height: 200px; background-size: cover; background-position: center; position: relative; }
+.sector-badge { position: absolute; bottom: 0; left: 0; background: var(--gold-elite); color: #000; padding: 5px 12px; font-size: 9px; font-weight: 800; font-family: 'Syncopate'; }
+
+.sector-details { padding: 30px; }
+.sector-id { font-size: 10px; font-weight: 800; color: #94A3B8; margin-bottom: 5px; }
+.sector-details h3 { font-family: 'Syncopate'; font-size: 14px; margin-bottom: 20px; color: #fff; }
+
+.sector-stats { list-style: none; padding: 0; margin-bottom: 30px; }
+.sector-stats li { font-size: 12px; color: #94A3B8; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+.sector-stats i { color: var(--gold-elite); width: 15px; }
+
+.btn-sector-enter { display: block; text-align: center; padding: 15px; border: 1px solid var(--gold-elite); color: var(--gold-elite); text-decoration: none; font-family: 'Syncopate'; font-size: 10px; font-weight: 700; transition: 0.3s; }
+.btn-sector-enter:hover { background: var(--gold-elite); color: #000; }
 /* ITINERARY & TIMELINE ARCHITECTURE */
 .itinerary-layout { padding: 60px 0 100px 0; }
 

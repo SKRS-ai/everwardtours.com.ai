@@ -24,6 +24,25 @@ body.stealth-theme {
     color: var(--white-titanium);
     font-family: 'Inter', sans-serif;
 }
+/* ABOUT & MANIFESTO ARCHITECTURE */
+.about-layout { padding: 80px 0 120px 0; }
+.about-hero { text-align: center; margin-bottom: 100px; }
+.about-hero h1 { font-family: 'Syncopate'; font-size: 52px; margin-top: 15px; }
+
+.vision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-bottom: 120px; }
+.vision-text h3 { font-family: 'Syncopate'; font-size: 20px; margin-bottom: 25px; color: var(--gold-elite); }
+.vision-text p { font-size: 16px; color: #94A3B8; line-height: 1.8; margin-bottom: 20px; }
+
+.vision-image { height: 450px; background-size: cover; background-position: center; border-radius: 4px; position: relative; border: 1px solid rgba(255,255,255,0.1); }
+.stat-overlay { position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); display: flex; gap: 20px; background: var(--navy-light); padding: 25px 40px; border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+.s-box { text-align: center; }
+.s-box strong { display: block; font-family: 'Syncopate'; font-size: 20px; color: var(--gold-elite); }
+.s-box span { font-size: 10px; color: #94A3B8; text-transform: uppercase; font-weight: 800; }
+
+.pillars-section { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center; }
+.pillar-card i { font-size: 32px; color: var(--gold-elite); margin-bottom: 20px; }
+.pillar-card h4 { font-family: 'Syncopate'; font-size: 12px; margin-bottom: 15px; }
+.pillar-card p { font-size: 13px; color: #94A3B8; line-height: 1.6; }
 /* FIELD GUIDE ARCHITECTURE */
 .guide-layout { padding: 80px 0 120px 0; }
 .guide-hero { text-align: center; margin-bottom: 80px; }

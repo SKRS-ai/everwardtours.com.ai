@@ -3,80 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONCIERGE TERMINAL | Everward Global Logistics</title>
+    <title>CONCIERGE TERMINAL | Everward HQ Support</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #F8FAFC !important;">
+<body class="stealth-theme">
 
-    <div class="terminal-layout container">
-        <aside class="coordinator-sidebar">
-            <div class="sidebar-header">
-                <h3>HQ DESK // PHI</h3>
-                <span class="status-indicator">● LIVE</span>
+    <div class="intel-header-bar">
+        <div class="container flex-between">
+            <div class="hq-status"><i class="fa-solid fa-headset"></i> HQ DESK // PHL-COMMS: <span class="gold-text">ENCRYPTED</span></div>
+            <div class="quick-access">
+                <a href="itinerary.html">Back to Mission</a>
+                <a href="index.html" class="vault-btn">Close Channel</a>
             </div>
-            
-            <div class="coordinator-card active">
-                <div class="coord-avatar" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150');"></div>
-                <div class="coord-info">
-                    <strong>Marcus V.</strong>
-                    <span>Lead Logistics Lead</span>
-                </div>
-            </div>
-
-            <div class="hq-briefing">
-                <h4>Sector Intel</h4>
-                <p><strong>Current Time:</strong> 15:42 EST</p>
-                <p><strong>Weather (Sedona):</strong> 72°F Clear</p>
-                <p><strong>Fleet Status:</strong> Optimal</p>
-            </div>
-        </aside>
-
-        <main class="chat-interface">
-            <header class="chat-header">
-                <div class="mission-status">
-                    <span class="label">SECURE CHANNEL 09</span>
-                    <h2>Active Concierge Link</h2>
-                </div>
-                <div class="header-actions">
-                    <button class="btn-call"><i class="fa-solid fa-phone"></i> Voice Link</button>
-                </div>
-            </header>
-
-            <div class="message-vault">
-                <div class="msg system">
-                    <span>Terminal initialized. Your session is encrypted.</span>
-                </div>
-                
-                <div class="msg agent">
-                    <div class="bubble">
-                        Good afternoon, Johnathan. I see your mission to the Sedona Sector is approaching. Would you like me to pre-stage your ground fleet at the terminal or the villa?
-                    </div>
-                    <span class="msg-time">14:05</span>
-                </div>
-
-                <div class="msg user">
-                    <div class="bubble">
-                        Please stage the Escalade at the Private Aviation Terminal. I'll be arriving at 16:00.
-                    </div>
-                    <span class="msg-time">14:10</span>
-                </div>
-
-                <div class="msg agent">
-                    <div class="bubble">
-                        Understood. Fleet asset 774-AZ is locked for 16:00. Your digital key is being pushed to your vault now.
-                    </div>
-                    <span class="msg-time">14:12</span>
-                </div>
-            </div>
-
-            <div class="chat-input-area">
-                <input type="text" placeholder="Initialize command or message...">
-                <button class="btn-send"><i class="fa-solid fa-paper-plane"></i></button>
-            </div>
-        </main>
+        </div>
     </div>
+
+    <main class="container concierge-layout">
+        <div class="terminal-grid">
+            
+            <aside class="coordinator-sidebar">
+                <div class="hq-profile-card">
+                    <div class="agent-avatar" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150');"></div>
+                    <h3>Marcus V.</h3>
+                    <span class="status-online">● PHL HQ ACTIVE</span>
+                    <p class="agent-bio">Lead Logistics Coordinator for the Sedona Sector. Expert in aviation staging and armored fleet deployment.</p>
+                </div>
+
+                <div class="sector-brief">
+                    <h4>Sector Intel [AZ-01]</h4>
+                    <ul class="intel-list-sm">
+                        <li><i class="fa-solid fa-clock"></i> Local Time: 15:42</li>
+                        <li><i class="fa-solid fa-cloud"></i> Weather: 72°F / Clear</li>
+                        <li><i class="fa-solid fa-shield"></i> Security Level: Normal</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="comm-interface">
+                <div class="chat-vault">
+                    <div class="msg system">
+                        <span>Terminal initialized. Your session is monitored by PHL-HQ for quality and security.</span>
+                    </div>
+
+                    <div class="msg agent">
+                        <div class="bubble">
+                            Welcome back, Johnathan. I see your Phenom 300E is currently over New Mexico. Your armored transport is pre-staged at Gate 4. Do you require a grocery restock for the Villa upon arrival?
+                        </div>
+                        <span class="timestamp">14:02</span>
+                    </div>
+
+                    <div class="msg user">
+                        <div class="bubble">
+                            Yes, Marcus. Please ensure the kitchen is stocked with local organic produce and high-alkaline water. Confirming Gate 4.
+                        </div>
+                        <span class="timestamp">14:05</span>
+                    </div>
+
+                    <div class="msg agent">
+                        <div class="bubble">
+                            Understood. Requesting logistics restock now. Your Digital Key for the perimeter gate is active in your Vault.
+                        </div>
+                        <span class="timestamp">14:06</span>
+                    </div>
+                </div>
+
+                <div class="input-area">
+                    <input type="text" placeholder="Enter command or message for HQ...">
+                    <button class="btn-send"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </section>
+
+        </div>
+    </main>
 
 </body>
 </html>

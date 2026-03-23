@@ -4,101 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUTHORIZATION VAULT | Everward Global Logistics</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #F8FAFC !important;">
+<body class="stealth-theme">
 
-    <div class="checkout-container container">
-        <main class="checkout-main">
+    <div class="intel-header-bar">
+        <div class="container flex-between">
+            <div class="hq-status"><i class="fa-solid fa-lock"></i> SECURE ENCRYPTED TERMINAL</div>
+            <div class="quick-access">
+                <a href="asset.html"><i class="fa-solid fa-arrow-left"></i> Review Briefing</a>
+                <a href="profile.html" class="vault-btn">MY VAULT</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="container checkout-grid">
+        <section class="auth-forms">
             <header class="checkout-header">
-                <span class="secure-tag"><i class="fa-solid fa-lock"></i> SECURE ENCRYPTED TERMINAL</span>
-                <h1>Mission Authorization</h1>
+                <h1>Final <span class="gold-text">Authorization</span></h1>
+                <p>Verify personnel and funding source to lock the negotiated rate.</p>
             </header>
 
-            <div class="checkout-section">
-                <div class="section-num">01</div>
-                <div class="section-body">
-                    <h3>Authorized Signatory</h3>
-                    <p>Details must match your legal identification for sector clearance.</p>
-                    <div class="input-grid">
-                        <div class="field">
-                            <label>Full Legal Name</label>
-                            <input type="text" placeholder="Johnathan Doe">
-                        </div>
-                        <div class="field">
-                            <label>Citizen ID</label>
-                            <input type="text" placeholder="GCJ-4402-ALPHA">
-                        </div>
+            <div class="checkout-card">
+                <h3>01. Personnel Verification</h3>
+                <div class="input-row">
+                    <div class="field">
+                        <label>Legal Name</label>
+                        <input type="text" placeholder="Johnathan Doe">
+                    </div>
+                    <div class="field">
+                        <label>Citizen ID</label>
+                        <input type="text" placeholder="GCJ-4402-ALPHA">
                     </div>
                 </div>
             </div>
 
-            <div class="checkout-section">
-                <div class="section-num">02</div>
-                <div class="section-body">
-                    <h3>Funding Source</h3>
-                    <div class="payment-methods">
-                        <label class="pay-option active">
-                            <input type="radio" name="pay" checked>
-                            <span><i class="fa-solid fa-credit-card"></i> Corporate Card</span>
-                        </label>
-                        <label class="pay-option">
-                            <input type="radio" name="pay">
-                            <span><i class="fa-solid fa-building-columns"></i> Wire Transfer</span>
-                        </label>
+            <div class="checkout-card">
+                <h3>02. Funding Source</h3>
+                <div class="payment-tabs">
+                    <div class="p-tab active"><i class="fa-solid fa-credit-card"></i> Card</div>
+                    <div class="p-tab"><i class="fa-solid fa-building-columns"></i> Wire</div>
+                </div>
+                <div class="field full">
+                    <label>Card Identity Number</label>
+                    <input type="text" placeholder="XXXX XXXX XXXX XXXX">
+                </div>
+                <div class="input-row">
+                    <div class="field">
+                        <label>Expiry</label>
+                        <input type="text" placeholder="MM/YY">
                     </div>
-                    
-                    <div class="card-details">
-                        <div class="field full">
-                            <label>Card Number</label>
-                            <input type="text" placeholder="XXXX XXXX XXXX XXXX">
-                        </div>
-                        <div class="input-grid">
-                            <div class="field">
-                                <label>Expiry</label>
-                                <input type="text" placeholder="MM/YY">
-                            </div>
-                            <div class="field">
-                                <label>CVC/Security Key</label>
-                                <input type="text" placeholder="***">
-                            </div>
-                        </div>
+                    <div class="field">
+                        <label>CVC</label>
+                        <input type="text" placeholder="***">
                     </div>
                 </div>
             </div>
 
-            <button class="btn-lock-blueprint">AUTHORIZE & LOCK RATE</button>
-            <p class="final-disclaimer">By clicking authorize, you agree to the logistics terms of Global Citizen Joe LLC. All funds are processed through our Philadelphia-based secure clearinghouse.</p>
-        </main>
+            <button class="btn-lock-rate">AUTHORIZE & LOCK RATE</button>
+            <p class="legal-disclaimer">By authorizing, you agree to the Governance Protocol and Terms of Global Citizen Joe LLC. Funds are processed via Philadelphia HQ Secure Clearinghouse.</p>
+        </section>
 
-        <aside class="checkout-sidebar">
-            <div class="blueprint-summary">
-                <h4>Active Blueprint Summary</h4>
-                <div class="summary-asset">
-                    <div class="asset-mini-img" style="background-image: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=150');"></div>
-                    <div class="asset-mini-text">
-                        <strong>Casa Arizona Grand Villa</strong>
-                        <span>Sedona Sector // 7 Nights</span>
+        <aside class="blueprint-summary">
+            <div class="summary-card">
+                <h3>Mission <span class="gold-text">Blueprint</span></h3>
+                <div class="summary-item">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=150" alt="Asset">
+                    <div class="summary-text">
+                        <strong>Casa Arizona Villa</strong>
+                        <span>Sedona [AZ-01]</span>
                     </div>
                 </div>
 
-                <div class="summary-breakdown">
-                    <div class="s-row"><span>Logistics Rate</span> <span>$10,150.00</span></div>
-                    <div class="s-row"><span>Elite Member Credit</span> <span class="gold-text">-$2,100.00</span></div>
-                    <div class="s-row"><span>Secure Processing</span> <span>$0.00</span></div>
+                <div class="summary-details">
+                    <div class="s-row"><span>Deployment</span> <span>Mar 24 - 31</span></div>
+                    <div class="s-row"><span>Personnel</span> <span>2 Adults</span></div>
                     <hr>
-                    <div class="s-row total"><span>Total Funding</span> <span>$8,050.00</span></div>
+                    <div class="s-row"><span>Logistics Base</span> <span>$10,150.00</span></div>
+                    <div class="s-row"><span>Elite Credit</span> <span class="gold-text">-$1,200.00</span></div>
+                    <div class="s-row total"><span>Total Investment</span> <span>$8,950.00</span></div>
                 </div>
 
-                <div class="security-guarantee">
+                <div class="trust-badge-box">
                     <i class="fa-solid fa-shield-halved"></i>
-                    <p><strong>Everward Guarantee:</strong> Your rate is locked. No hidden surcharges or mid-mission adjustments.</p>
+                    <p><strong>Everward Guarantee:</strong> No surcharges. No data leakage. 24/7 Extraction Support included.</p>
                 </div>
             </div>
         </aside>
-    </div>
+    </main>
 
 </body>
 </html>
